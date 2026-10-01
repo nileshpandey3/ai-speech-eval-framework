@@ -9,6 +9,9 @@ description = "A small speech-to-text evaluation pipeline"
 requires-python = ">=3.11"
 dependencies = [
     "jiwer>=4,<5",
+    "faster-whisper>=1,<2",
+    "av==18.0.0", # Avoid the PyAV 19 metadata_errors API change
+
 ]
 
 [project.optional-dependencies]
