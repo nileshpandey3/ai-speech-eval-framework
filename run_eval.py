@@ -3,7 +3,10 @@ from pathlib import Path
 from time import perf_counter
 
 from faster_whisper import WhisperModel
-from src.speech_eval.score import score_corpus, score_transcript
+
+from speech_eval.dataset import fingerprint_dataset
+from speech_eval.normalize import NORMALIZATION_VERSION
+from speech_eval.score import score_corpus, score_transcript
 from speech_eval.transcribe import transcribe_audio
 
 
@@ -59,6 +62,8 @@ def main():
         "performance": {
             "total_transcription_seconds": total_transcription_seconds,
         },
+        "dataset_fingerprint": fingerprint_dataset(samples),
+        "normalization_version": NORMALIZATION_VERSION,
     }
 
     output_path = Path("outputs/results.json")
