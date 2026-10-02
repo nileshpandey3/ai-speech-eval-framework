@@ -38,4 +38,3 @@ def test_changed_audio_changes_fingerprint(tmp_path):
     audio.write_bytes(b"replacement audio")
 
     assert fingerprint_dataset(samples) != original
-    
