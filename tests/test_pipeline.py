@@ -40,4 +40,6 @@ def test_live_evaluation_against_baseline(extras):
 
     assert candidate["sample_count"] > 0
     assert len(candidate["clips"]) == candidate["sample_count"]
+    # GO means “no aggregate WER regression detected on this smoke dataset.”
+    # It doesn’t establish production readiness, and an aggregate score can hide one clip getting worse while another improves.
     assert decision["decision"] == "GO", decision["reasons"]
