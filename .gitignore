@@ -81,6 +81,9 @@ target/
 # Pycharm IDE
 .idea/
 
+#Reports
+outputs/
+
 # IPython
 profile_default/
 ipython_config.py
