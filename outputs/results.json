@@ -8,10 +8,10 @@
   },
   "sample_count": 2,
   "corpus_scores": {
-    "wer": 0.36,
+    "wer": 0.32,
     "insertions": 0,
     "substitutions": 5,
-    "deletions": 4
+    "deletions": 3
   },
   "clips": [
     {
@@ -25,23 +25,23 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.17463441693689674
+      "transcription_seconds": 0.17386149999219924
     },
     {
       "id": "1272-141231-0001",
       "slice": "clean",
       "reference": "SWEAT COVERED BRION'S BODY TRICKLING INTO THE TIGHT LOINCLOTH THAT WAS THE ONLY GARMENT HE WORE",
-      "prediction": "Sweat-covered Breon's body trickling into the tight-laying cloths that was the onlygerman-hue-war.",
+      "prediction": "Sweat-covered Breon's body trickling into the tight-laying cloths that was the only german-hue-war.",
       "scores": {
-        "wer": 0.5625,
+        "wer": 0.5,
         "insertions": 0,
         "substitutions": 5,
-        "deletions": 4
+        "deletions": 3
       },
-      "transcription_seconds": 0.19451737497001886
+      "transcription_seconds": 0.19315325003117323
     }
   ],
   "performance": {
-    "total_transcription_seconds": 0.3691517919069156
+    "total_transcription_seconds": 0.36701475002337247
   }
 }
