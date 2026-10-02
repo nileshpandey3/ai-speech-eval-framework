@@ -27,4 +27,6 @@ where = ["src"]
 testpaths = ["tests"]
 markers = [
     "live: runs the actual speech model",
+    "comparison: runs comparison tests",
+    "transcript_word_scores",
 ]
