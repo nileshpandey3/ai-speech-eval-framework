@@ -29,7 +29,7 @@
         "substitutions": 1,
         "deletions": 0
       },
-      "transcription_seconds": 0.20417416596319526
+      "transcription_seconds": 0.18455124995671213
     },
     {
       "id": "1272-128104-0001",
@@ -42,7 +42,7 @@
         "substitutions": 1,
         "deletions": 0
       },
-      "transcription_seconds": 0.20059075008612126
+      "transcription_seconds": 0.15684612502809614
     },
     {
       "id": "1462-170138-0000",
@@ -55,7 +55,7 @@
         "substitutions": 2,
         "deletions": 1
       },
-      "transcription_seconds": 0.27145966701209545
+      "transcription_seconds": 0.21350741595961154
     },
     {
       "id": "1462-170138-0001",
@@ -68,7 +68,7 @@
         "substitutions": 1,
         "deletions": 0
       },
-      "transcription_seconds": 0.17470983392558992
+      "transcription_seconds": 0.15896529192104936
     },
     {
       "id": "1673-143396-0000",
@@ -81,7 +81,7 @@
         "substitutions": 3,
         "deletions": 0
       },
-      "transcription_seconds": 0.2601585000520572
+      "transcription_seconds": 0.265089042019099
     },
     {
       "id": "1673-143396-0001",
@@ -94,7 +94,7 @@
         "substitutions": 2,
         "deletions": 1
       },
-      "transcription_seconds": 0.22717062500305474
+      "transcription_seconds": 0.23312450002413243
     },
     {
       "id": "174-168635-0000",
@@ -107,7 +107,7 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.1517906669760123
+      "transcription_seconds": 0.15003424999304116
     },
     {
       "id": "174-168635-0001",
@@ -120,7 +120,7 @@
         "substitutions": 1,
         "deletions": 1
       },
-      "transcription_seconds": 0.1549196250271052
+      "transcription_seconds": 0.15284166694618762
     },
     {
       "id": "1919-142785-0000",
@@ -133,7 +133,7 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.1287692500045523
+      "transcription_seconds": 0.13375795900356025
     },
     {
       "id": "1919-142785-0001",
@@ -146,7 +146,7 @@
         "substitutions": 1,
         "deletions": 1
       },
-      "transcription_seconds": 0.2479565420653671
+      "transcription_seconds": 0.21965587500017136
     },
     {
       "id": "1988-147956-0000",
@@ -159,7 +159,7 @@
         "substitutions": 1,
         "deletions": 0
       },
-      "transcription_seconds": 0.3163696660194546
+      "transcription_seconds": 0.24045037489850074
     },
     {
       "id": "1988-147956-0001",
@@ -172,11 +172,11 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.2266782500082627
+      "transcription_seconds": 0.22957637498620898
     }
   ],
   "performance": {
-    "total_transcription_seconds": 2.564747542142868
+    "total_transcription_seconds": 2.3384001257363707
   },
   "dataset_fingerprint": "8b5e649b4c1bd2003b282df9485e2962546c66358400169d8605b6437b961e11",
   "normalization_version": "v1"

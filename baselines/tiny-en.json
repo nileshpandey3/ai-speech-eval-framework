@@ -10,44 +10,174 @@
     "beam_size": 1,
     "temperature": 0
   },
-  "sample_count": 2,
+  "sample_count": 12,
   "corpus_scores": {
-    "wer": 0.32,
-    "insertions": 0,
-    "substitutions": 5,
-    "deletions": 3
+    "wer": 0.06909090909090909,
+    "insertions": 2,
+    "substitutions": 13,
+    "deletions": 4
   },
   "clips": [
     {
-      "id": "1272-141231-0000",
+      "id": "1272-128104-0000",
       "slice": "clean",
-      "reference": "A MAN SAID TO THE UNIVERSE SIR I EXIST",
-      "prediction": "A man said to the universe, Sir, I exist.",
+      "reference": "MISTER QUILTER IS THE APOSTLE OF THE MIDDLE CLASSES AND WE ARE GLAD TO WELCOME HIS GOSPEL",
+      "prediction": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his gospel.",
+      "scores": {
+        "wer": 0.058823529411764705,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.18778987496625632
+    },
+    {
+      "id": "1272-128104-0001",
+      "slice": "clean",
+      "reference": "NOR IS MISTER QUILTER'S MANNER LESS INTERESTING THAN HIS MATTER",
+      "prediction": "Nor is Mr. Quilter's manner less interesting than his matter.",
+      "scores": {
+        "wer": 0.1,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.1545586669817567
+    },
+    {
+      "id": "1462-170138-0000",
+      "slice": "clean",
+      "reference": "HE HAD WRITTEN A NUMBER OF BOOKS HIMSELF AMONG THEM A HISTORY OF DANCING A HISTORY OF COSTUME A KEY TO SHAKESPEARE'S SONNETS A STUDY OF THE POETRY OF ERNEST DOWSON ET CETERA",
+      "prediction": "He had written a number of books himself among them a history of dancing a history of costume a Key to Shakespeare's sonnets a study of the poetry of Ernest Dousin etc",
+      "scores": {
+        "wer": 0.09090909090909091,
+        "insertions": 0,
+        "substitutions": 2,
+        "deletions": 1
+      },
+      "transcription_seconds": 0.20548116602003574
+    },
+    {
+      "id": "1462-170138-0001",
+      "slice": "clean",
+      "reference": "HUGH'S WRITTEN A DELIGHTFUL PART FOR HER AND SHE'S QUITE INEXPRESSIBLE",
+      "prediction": "He was written a delightful part for her and she's quite inexpressible.",
+      "scores": {
+        "wer": 0.18181818181818182,
+        "insertions": 1,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.15517325000837445
+    },
+    {
+      "id": "1673-143396-0000",
+      "slice": "clean",
+      "reference": "A LAUDABLE REGARD FOR THE HONOR OF THE FIRST PROSELYTE HAS COUNTENANCED THE BELIEF THE HOPE THE WISH THAT THE EBIONITES OR AT LEAST THE NAZARENES WERE DISTINGUISHED ONLY BY THEIR OBSTINATE PERSEVERANCE IN THE PRACTICE OF THE MOSAIC RITES",
+      "prediction": "A laudable regard for the honor of the first proselyte has countenced the belief, the hope, the wish, that the ebbianites, or at least the Nazareans, were distinguished only by their obstinate perseverance in the practice of the Mosaic rites.",
+      "scores": {
+        "wer": 0.075,
+        "insertions": 0,
+        "substitutions": 3,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.26088154199533165
+    },
+    {
+      "id": "1673-143396-0001",
+      "slice": "clean",
+      "reference": "THEIR CHURCHES HAVE DISAPPEARED THEIR BOOKS ARE OBLITERATED THEIR OBSCURE FREEDOM MIGHT ALLOW A LATITUDE OF FAITH AND THE SOFTNESS OF THEIR INFANT CREED WOULD BE VARIOUSLY MOULDED BY THE ZEAL OR PRUDENCE OF THREE HUNDRED YEARS",
+      "prediction": "Their churches have disappeared, their books are obliterated, their obscure freedom might allow a latitude of faith, and the softness of their infant creed would be variously molded by the zeal or prudence of 300 years.",
+      "scores": {
+        "wer": 0.08108108108108109,
+        "insertions": 0,
+        "substitutions": 2,
+        "deletions": 1
+      },
+      "transcription_seconds": 0.23020437511149794
+    },
+    {
+      "id": "174-168635-0000",
+      "slice": "clean",
+      "reference": "HE HAD NEVER BEEN FATHER LOVER HUSBAND FRIEND",
+      "prediction": "He had never been father, lover, husband, friend.",
       "scores": {
         "wer": 0.0,
         "insertions": 0,
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.16939308296423405
+      "transcription_seconds": 0.14432020799722522
     },
     {
-      "id": "1272-141231-0001",
+      "id": "174-168635-0001",
       "slice": "clean",
-      "reference": "SWEAT COVERED BRION'S BODY TRICKLING INTO THE TIGHT LOINCLOTH THAT WAS THE ONLY GARMENT HE WORE",
-      "prediction": "Sweat-covered Breon's body trickling into the tight-laying cloths that was the only german-hue-war.",
+      "reference": "THE HEART OF THAT EX CONVICT WAS FULL OF VIRGINITY",
+      "prediction": "The heart of that ex-convict was full of virginity.",
       "scores": {
-        "wer": 0.5,
+        "wer": 0.2,
         "insertions": 0,
-        "substitutions": 5,
-        "deletions": 3
+        "substitutions": 1,
+        "deletions": 1
       },
-      "transcription_seconds": 0.18909304204862565
+      "transcription_seconds": 0.1467197920428589
+    },
+    {
+      "id": "1919-142785-0000",
+      "slice": "clean",
+      "reference": "ILLUSTRATION LONG PEPPER",
+      "prediction": "illustration, long pepper.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.129502416937612
+    },
+    {
+      "id": "1919-142785-0001",
+      "slice": "clean",
+      "reference": "LONG PEPPER THIS IS THE PRODUCE OF A DIFFERENT PLANT FROM THAT WHICH PRODUCES THE BLACK IT CONSISTING OF THE HALF RIPE FLOWER HEADS OF WHAT NATURALISTS CALL PIPER LONGUM AND CHABA",
+      "prediction": "Long pepper. This is the produce of a different plant from that which produces the black. It consisting of the half-right flower heads of what naturalists call Piper Longum and Chaba.",
+      "scores": {
+        "wer": 0.0625,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 1
+      },
+      "transcription_seconds": 0.21573433303274214
+    },
+    {
+      "id": "1988-147956-0000",
+      "slice": "clean",
+      "reference": "FUCHS BROUGHT UP A SACK OF POTATOES AND A PIECE OF CURED PORK FROM THE CELLAR AND GRANDMOTHER PACKED SOME LOAVES OF SATURDAY'S BREAD A JAR OF BUTTER AND SEVERAL PUMPKIN PIES IN THE STRAW OF THE WAGON BOX",
+      "prediction": "Fux brought up a sack of potatoes and a piece of cured pork from the cellar, and a grandmother packed some loaves of Saturday's bread, a jar of butter, and several pumpkin pies in the straw of the wagon box.",
+      "scores": {
+        "wer": 0.05128205128205128,
+        "insertions": 1,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.2327459999360144
+    },
+    {
+      "id": "1988-147956-0001",
+      "slice": "clean",
+      "reference": "OCCASIONALLY ONE OF THE HORSES WOULD TEAR OFF WITH HIS TEETH A PLANT FULL OF BLOSSOMS AND WALK ALONG MUNCHING IT THE FLOWERS NODDING IN TIME TO HIS BITES AS HE ATE DOWN TOWARD THEM",
+      "prediction": "Occasionally, one of the horses would tear off with his teeth, a plant full of blossoms, and walk along munching it, the flowers nodding in time to his bites as he ate down toward them.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.22528583300299942
     }
   ],
   "performance": {
-    "total_transcription_seconds": 0.3584861250128597
+    "total_transcription_seconds": 2.288397458032705
   },
-  "dataset_fingerprint": "ac55cba4ce308f3443ec1aac5a95da8b660acdf02ed48098a771592044cc5e87",
+  "dataset_fingerprint": "8b5e649b4c1bd2003b282df9485e2962546c66358400169d8605b6437b961e11",
   "normalization_version": "v1"
 }
