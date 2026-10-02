@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   fast-tests:
-    name: PR decision gate
+    name: Fast Framework Tests
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
@@ -65,7 +65,7 @@ jobs:
         run: |
           python -m pytest -m live -q \
             --html=outputs/live-report.html \
-            --self-contained-html \
+            --self-contained-html
 
       - name: Upload evaluation evidence
         if: always()
