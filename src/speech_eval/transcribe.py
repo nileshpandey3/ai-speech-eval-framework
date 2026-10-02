@@ -1,18 +1,13 @@
 from faster_whisper import WhisperModel
 
+from speech_eval.config import DECODING_SETTINGS
+
 
 def transcribe_audio(model:WhisperModel, audio:str)->str:
     """Transcribe English audio and combine the segment text"""
     segments, _ = model.transcribe(
         audio=audio,
-        language='en',
-        temperature=0, # Avoid random sampling
-
-        # beam_size=1 means it follows one candidate transcription path at a time.
-        # This is faster than exploring several alternatives. A larger value,
-        # such as 5, considers more candidate paths and may improve accuracy, but takes more computation.
-        beam_size=1,
-
+        **DECODING_SETTINGS
     )
     transcript_parts = []
     for segment in segments:

@@ -66,3 +66,17 @@ class TestCompare:
 
         assert result["decision"] == "NO_GO"
         assert result["reasons"] == ["Invalid WER value"]
+
+
+    def test_default_gate_blocks_accuracy_regression(self):
+        """Reject a candidate whose WER exceeds the baseline."""
+        baseline = make_evaluation(0.32)
+        candidate = make_evaluation(0.40)
+
+        result = compare_evaluations(
+            baseline=baseline,
+            candidate=candidate,
+        )
+
+        assert result["decision"] == "NO_GO"
+        assert result["reasons"]

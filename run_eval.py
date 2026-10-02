@@ -8,6 +8,9 @@ from speech_eval.dataset import fingerprint_dataset
 from speech_eval.normalize import NORMALIZATION_VERSION
 from speech_eval.score import score_corpus, score_transcript
 from speech_eval.transcribe import transcribe_audio
+from speech_eval.config import MODEL_SETTINGS, DECODING_SETTINGS
+from faster_whisper.utils import download_model
+
 
 
 def main():
@@ -18,7 +21,18 @@ def main():
             if line.strip():
                 samples.append(json.loads(line))
 
-    model = WhisperModel("tiny.en", device="cpu", compute_type="int8")
+    # download_model() supports a commit hash and returns the downloaded model directory.
+    # It reuses cached files when available
+    model_path = download_model(
+        MODEL_SETTINGS["name"],
+        revision=MODEL_SETTINGS["revision"],
+    )
+
+    model = WhisperModel(
+        model_path,
+        device=MODEL_SETTINGS["device"],
+        compute_type=MODEL_SETTINGS["compute_type"],
+    )
 
     references = []
     predictions = []
@@ -49,13 +63,8 @@ def main():
 
     corpus_result = score_corpus(references, predictions)
     evaluation = {
-        "model": {
-            "name": "tiny.en",
-            "device": "cpu",
-            "compute_type": "int8",
-            "beam_size": 1,
-            "temperature": 0,
-        },
+        "model": MODEL_SETTINGS.copy(),
+        "decoding": DECODING_SETTINGS.copy(),
         "sample_count": len(clip_results),
         "corpus_scores": corpus_result,
         "clips": clip_results,

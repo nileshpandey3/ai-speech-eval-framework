@@ -3,6 +3,10 @@
     "name": "tiny.en",
     "device": "cpu",
     "compute_type": "int8",
+    "revision": "0d3d19a32d3338f10357c0889762bd8d64bbdeba"
+  },
+  "decoding": {
+    "language": "en",
     "beam_size": 1,
     "temperature": 0
   },
@@ -25,7 +29,7 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.15230970899574459
+      "transcription_seconds": 0.14850524999201298
     },
     {
       "id": "1272-141231-0001",
@@ -38,11 +42,11 @@
         "substitutions": 5,
         "deletions": 3
       },
-      "transcription_seconds": 0.18756370898336172
+      "transcription_seconds": 0.19356479193083942
     }
   ],
   "performance": {
-    "total_transcription_seconds": 0.3398734179791063
+    "total_transcription_seconds": 0.3420700419228524
   },
   "dataset_fingerprint": "ac55cba4ce308f3443ec1aac5a95da8b660acdf02ed48098a771592044cc5e87",
   "normalization_version": "v1"
