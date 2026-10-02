@@ -63,7 +63,7 @@ jobs:
 
       - name: Run live accuracy gate
         run: |
-          python -m pytest -m live -q \
+          python -m pytest -m "live and not benchmark" -q \
             --html=outputs/live-report.html \
             --self-contained-html
 

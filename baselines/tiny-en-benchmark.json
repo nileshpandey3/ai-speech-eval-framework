@@ -1,0 +1,807 @@
+{
+  "model": {
+    "name": "tiny.en",
+    "device": "cpu",
+    "compute_type": "int8",
+    "revision": "0d3d19a32d3338f10357c0889762bd8d64bbdeba"
+  },
+  "decoding": {
+    "language": "en",
+    "beam_size": 1,
+    "temperature": 0
+  },
+  "sample_count": 60,
+  "corpus_scores": {
+    "wer": 0.05489417989417989,
+    "insertions": 9,
+    "substitutions": 58,
+    "deletions": 16
+  },
+  "clips": [
+    {
+      "id": "1272-128104-0000",
+      "slice": "clean",
+      "reference": "MISTER QUILTER IS THE APOSTLE OF THE MIDDLE CLASSES AND WE ARE GLAD TO WELCOME HIS GOSPEL",
+      "prediction": "Mr. Quilter is the apostle of the middle classes, and we are glad to welcome his gospel.",
+      "scores": {
+        "wer": 0.058823529411764705,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.1877242079935968
+    },
+    {
+      "id": "1272-128104-0001",
+      "slice": "clean",
+      "reference": "NOR IS MISTER QUILTER'S MANNER LESS INTERESTING THAN HIS MATTER",
+      "prediction": "Nor is Mr. Quilter's manner less interesting than his matter.",
+      "scores": {
+        "wer": 0.1,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.15156308293808252
+    },
+    {
+      "id": "1272-128104-0002",
+      "slice": "clean",
+      "reference": "HE TELLS US THAT AT THIS FESTIVE SEASON OF THE YEAR WITH CHRISTMAS AND ROAST BEEF LOOMING BEFORE US SIMILES DRAWN FROM EATING AND ITS RESULTS OCCUR MOST READILY TO THE MIND",
+      "prediction": "He tells us that at this festive season of the year, with Christmas and roast beef looming before us, similes drawn from eating and its results occur most readily to the mind.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.2087904999498278
+    },
+    {
+      "id": "1462-170138-0000",
+      "slice": "clean",
+      "reference": "HE HAD WRITTEN A NUMBER OF BOOKS HIMSELF AMONG THEM A HISTORY OF DANCING A HISTORY OF COSTUME A KEY TO SHAKESPEARE'S SONNETS A STUDY OF THE POETRY OF ERNEST DOWSON ET CETERA",
+      "prediction": "He had written a number of books himself among them a history of dancing a history of costume a Key to Shakespeare's sonnets a study of the poetry of Ernest Dousin etc",
+      "scores": {
+        "wer": 0.09090909090909091,
+        "insertions": 0,
+        "substitutions": 2,
+        "deletions": 1
+      },
+      "transcription_seconds": 0.20769625005777925
+    },
+    {
+      "id": "1462-170138-0001",
+      "slice": "clean",
+      "reference": "HUGH'S WRITTEN A DELIGHTFUL PART FOR HER AND SHE'S QUITE INEXPRESSIBLE",
+      "prediction": "He was written a delightful part for her and she's quite inexpressible.",
+      "scores": {
+        "wer": 0.18181818181818182,
+        "insertions": 1,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.15369191602803767
+    },
+    {
+      "id": "1462-170138-0002",
+      "slice": "clean",
+      "reference": "I HAPPEN TO HAVE MAC CONNELL'S BOX FOR TONIGHT OR THERE'D BE NO CHANCE OF OUR GETTING PLACES",
+      "prediction": "I happen to have McConnell's box for tonight, or there'd be no chance of our getting places.",
+      "scores": {
+        "wer": 0.1111111111111111,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 1
+      },
+      "transcription_seconds": 0.16422433406114578
+    },
+    {
+      "id": "1673-143396-0000",
+      "slice": "clean",
+      "reference": "A LAUDABLE REGARD FOR THE HONOR OF THE FIRST PROSELYTE HAS COUNTENANCED THE BELIEF THE HOPE THE WISH THAT THE EBIONITES OR AT LEAST THE NAZARENES WERE DISTINGUISHED ONLY BY THEIR OBSTINATE PERSEVERANCE IN THE PRACTICE OF THE MOSAIC RITES",
+      "prediction": "A laudable regard for the honor of the first proselyte has countenced the belief, the hope, the wish, that the ebbianites, or at least the Nazareans, were distinguished only by their obstinate perseverance in the practice of the Mosaic rites.",
+      "scores": {
+        "wer": 0.075,
+        "insertions": 0,
+        "substitutions": 3,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.25663691700901836
+    },
+    {
+      "id": "1673-143396-0001",
+      "slice": "clean",
+      "reference": "THEIR CHURCHES HAVE DISAPPEARED THEIR BOOKS ARE OBLITERATED THEIR OBSCURE FREEDOM MIGHT ALLOW A LATITUDE OF FAITH AND THE SOFTNESS OF THEIR INFANT CREED WOULD BE VARIOUSLY MOULDED BY THE ZEAL OR PRUDENCE OF THREE HUNDRED YEARS",
+      "prediction": "Their churches have disappeared, their books are obliterated, their obscure freedom might allow a latitude of faith, and the softness of their infant creed would be variously molded by the zeal or prudence of 300 years.",
+      "scores": {
+        "wer": 0.08108108108108109,
+        "insertions": 0,
+        "substitutions": 2,
+        "deletions": 1
+      },
+      "transcription_seconds": 0.2327021249802783
+    },
+    {
+      "id": "1673-143396-0002",
+      "slice": "clean",
+      "reference": "YET THE MOST CHARITABLE CRITICISM MUST REFUSE THESE SECTARIES ANY KNOWLEDGE OF THE PURE AND PROPER DIVINITY OF CHRIST",
+      "prediction": "Yet, the most charitable criticism must refuse these sectories any knowledge of the pure and proper divinity of Christ.",
+      "scores": {
+        "wer": 0.05263157894736842,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.17394279199652374
+    },
+    {
+      "id": "174-168635-0000",
+      "slice": "clean",
+      "reference": "HE HAD NEVER BEEN FATHER LOVER HUSBAND FRIEND",
+      "prediction": "He had never been father, lover, husband, friend.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.14470195898320526
+    },
+    {
+      "id": "174-168635-0001",
+      "slice": "clean",
+      "reference": "THE HEART OF THAT EX CONVICT WAS FULL OF VIRGINITY",
+      "prediction": "The heart of that ex-convict was full of virginity.",
+      "scores": {
+        "wer": 0.2,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 1
+      },
+      "transcription_seconds": 0.14707504108082503
+    },
+    {
+      "id": "174-168635-0002",
+      "slice": "clean",
+      "reference": "HIS SISTER AND HIS SISTER'S CHILDREN HAD LEFT HIM ONLY A VAGUE AND FAR OFF MEMORY WHICH HAD FINALLY ALMOST COMPLETELY VANISHED HE HAD MADE EVERY EFFORT TO FIND THEM AND NOT HAVING BEEN ABLE TO FIND THEM HE HAD FORGOTTEN THEM",
+      "prediction": "His sister and his sister's children had left him only a vague and far-off memory, which had finally almost completely vanished. He had made every effort to find them, and not having been able to find them, he had forgotten them.",
+      "scores": {
+        "wer": 0.047619047619047616,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 1
+      },
+      "transcription_seconds": 0.2425610419595614
+    },
+    {
+      "id": "1919-142785-0000",
+      "slice": "clean",
+      "reference": "ILLUSTRATION LONG PEPPER",
+      "prediction": "illustration, long pepper.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.12854437495116144
+    },
+    {
+      "id": "1919-142785-0001",
+      "slice": "clean",
+      "reference": "LONG PEPPER THIS IS THE PRODUCE OF A DIFFERENT PLANT FROM THAT WHICH PRODUCES THE BLACK IT CONSISTING OF THE HALF RIPE FLOWER HEADS OF WHAT NATURALISTS CALL PIPER LONGUM AND CHABA",
+      "prediction": "Long pepper. This is the produce of a different plant from that which produces the black. It consisting of the half-right flower heads of what naturalists call Piper Longum and Chaba.",
+      "scores": {
+        "wer": 0.0625,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 1
+      },
+      "transcription_seconds": 0.21382449998054653
+    },
+    {
+      "id": "1919-142785-0002",
+      "slice": "clean",
+      "reference": "ORIGINALLY THE MOST VALUABLE OF THESE WERE FOUND IN THE SPICE ISLANDS OR MOLUCCAS OF THE INDIAN OCEAN AND WERE HIGHLY PRIZED BY THE NATIONS OF ANTIQUITY",
+      "prediction": "Originally, the most valuable of these were found in the spice islands or mollucas of the Indian Ocean, and were highly prized by the nations of antiquity.",
+      "scores": {
+        "wer": 0.037037037037037035,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.1957825419958681
+    },
+    {
+      "id": "1988-147956-0000",
+      "slice": "clean",
+      "reference": "FUCHS BROUGHT UP A SACK OF POTATOES AND A PIECE OF CURED PORK FROM THE CELLAR AND GRANDMOTHER PACKED SOME LOAVES OF SATURDAY'S BREAD A JAR OF BUTTER AND SEVERAL PUMPKIN PIES IN THE STRAW OF THE WAGON BOX",
+      "prediction": "Fux brought up a sack of potatoes and a piece of cured pork from the cellar, and a grandmother packed some loaves of Saturday's bread, a jar of butter, and several pumpkin pies in the straw of the wagon box.",
+      "scores": {
+        "wer": 0.05128205128205128,
+        "insertions": 1,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.23498929105699062
+    },
+    {
+      "id": "1988-147956-0001",
+      "slice": "clean",
+      "reference": "OCCASIONALLY ONE OF THE HORSES WOULD TEAR OFF WITH HIS TEETH A PLANT FULL OF BLOSSOMS AND WALK ALONG MUNCHING IT THE FLOWERS NODDING IN TIME TO HIS BITES AS HE ATE DOWN TOWARD THEM",
+      "prediction": "Occasionally, one of the horses would tear off with his teeth, a plant full of blossoms, and walk along munching it, the flowers nodding in time to his bites as he ate down toward them.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.22359704202972353
+    },
+    {
+      "id": "1988-147956-0002",
+      "slice": "clean",
+      "reference": "IT'S NO BETTER THAN A BADGER HOLE NO PROPER DUGOUT AT ALL",
+      "prediction": "It's no better than a badger hole. No proper dugout at all.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.15568366600200534
+    },
+    {
+      "id": "1993-147149-0000",
+      "slice": "clean",
+      "reference": "HOW INFINITE THE WEALTH OF LOVE AND HOPE GARNERED IN THESE SAME TINY TREASURE HOUSES AND OH",
+      "prediction": "How infinite the wealth of love and hope garnered in these same tiny treasure houses and oh.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.16288987500593066
+    },
+    {
+      "id": "1993-147149-0001",
+      "slice": "clean",
+      "reference": "WHAT BANKRUPTS IN THE WORLD WE FEEL WHEN DEATH LIKE SOME REMORSELESS CREDITOR SEIZES ON ALL WE FONDLY THOUGHT OUR OWN THE TWINS",
+      "prediction": "What bankrupts in the world we feel when death like some remorseless creditor ceases on all we fondly thought our own The twins",
+      "scores": {
+        "wer": 0.043478260869565216,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.18251566600520164
+    },
+    {
+      "id": "1993-147149-0002",
+      "slice": "clean",
+      "reference": "THE GHOUL LIKE FEVER WAS NOT TO BE BRAVED WITH IMPUNITY AND BAULKED OF ITS PREY",
+      "prediction": "The ghoul-like fever was not to be braved with impunity and balked of its prey.",
+      "scores": {
+        "wer": 0.1875,
+        "insertions": 0,
+        "substitutions": 2,
+        "deletions": 1
+      },
+      "transcription_seconds": 0.16474620799999684
+    },
+    {
+      "id": "2035-147960-0000",
+      "slice": "clean",
+      "reference": "SHE WAS FOUR YEARS OLDER THAN I TO BE SURE AND HAD SEEN MORE OF THE WORLD BUT I WAS A BOY AND SHE WAS A GIRL AND I RESENTED HER PROTECTING MANNER",
+      "prediction": "She was four years older than I to be sure and had seen more of the world. But I was a boy and she was a girl and I resented her protecting manner.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.20213637501001358
+    },
+    {
+      "id": "2035-147960-0001",
+      "slice": "clean",
+      "reference": "THIS CHANGE CAME ABOUT FROM AN ADVENTURE WE HAD TOGETHER",
+      "prediction": "This change came about from an adventure we had together.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.15508158307056874
+    },
+    {
+      "id": "2035-147960-0002",
+      "slice": "clean",
+      "reference": "ONE DAY WHEN I RODE OVER TO THE SHIMERDAS I FOUND ANTONIA STARTING OFF ON FOOT FOR RUSSIAN PETER'S HOUSE TO BORROW A SPADE AMBROSCH NEEDED",
+      "prediction": "One day when I rode over to the Shemerdas, I found Antonea starting off on foot for Russian Peter's house to borrow a spade and brush needed.",
+      "scores": {
+        "wer": 0.15384615384615385,
+        "insertions": 1,
+        "substitutions": 3,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.203644625027664
+    },
+    {
+      "id": "2078-142845-0000",
+      "slice": "clean",
+      "reference": "KIRKLEATHAM YEAST",
+      "prediction": "Curply thumb yeast.",
+      "scores": {
+        "wer": 1.0,
+        "insertions": 1,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.13049970800057054
+    },
+    {
+      "id": "2078-142845-0001",
+      "slice": "clean",
+      "reference": "SEVENTEEN SEVENTEEN",
+      "prediction": "1717.",
+      "scores": {
+        "wer": 1.0,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 1
+      },
+      "transcription_seconds": 0.1259733340702951
+    },
+    {
+      "id": "2078-142845-0002",
+      "slice": "clean",
+      "reference": "TO MAKE GOOD HOME MADE BREAD",
+      "prediction": "to make good homemade bread.",
+      "scores": {
+        "wer": 0.3333333333333333,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 1
+      },
+      "transcription_seconds": 0.13155883294530213
+    },
+    {
+      "id": "2086-149214-0000",
+      "slice": "clean",
+      "reference": "THE NARRATIVE IT MAY BE IS WOVEN OF SO HUMBLE A TEXTURE AS TO REQUIRE THIS ADVANTAGE AND AT THE SAME TIME TO RENDER IT THE MORE DIFFICULT OF ATTAINMENT",
+      "prediction": "The narrative, it may be, is woven of so humble a texture as to require this advantage, and at the same time to render it the more difficult of attainment.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.20116108399815857
+    },
+    {
+      "id": "2086-149214-0001",
+      "slice": "clean",
+      "reference": "IN GOOD FAITH HOWEVER HE IS NOT SUFFICIENTLY IMAGINATIVE TO FLATTER HIMSELF WITH THE SLIGHTEST HOPE OF THIS KIND",
+      "prediction": "In good faith, however, he is not sufficiently imaginative to flatter himself with the slightest hope of this kind.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.16889412503223866
+    },
+    {
+      "id": "2086-149214-0002",
+      "slice": "clean",
+      "reference": "THE AUTHOR HAS CONSIDERED IT HARDLY WORTH HIS WHILE THEREFORE RELENTLESSLY TO IMPALE THE STORY WITH ITS MORAL AS WITH AN IRON ROD OR RATHER AS BY STICKING A PIN THROUGH A BUTTERFLY THUS AT ONCE DEPRIVING IT OF LIFE AND CAUSING IT TO STIFFEN IN AN UNGAINLY AND UNNATURAL ATTITUDE",
+      "prediction": "The author has considered it hardly worth his while, therefore, relentlessly to impale the story with its moral as with an iron rod, or rather as by sticking a pen through a butterfly. Thus it wants to pry the good of life and causing it to stiffen in an ungainly and unnatural attitude.",
+      "scores": {
+        "wer": 0.13725490196078433,
+        "insertions": 2,
+        "substitutions": 5,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.2753705830546096
+    },
+    {
+      "id": "2277-149874-0000",
+      "slice": "clean",
+      "reference": "MINNIE'S FLAT AS THE ONE FLOOR RESIDENT APARTMENTS WERE THEN BEING CALLED WAS IN A PART OF WEST VAN BUREN STREET INHABITED BY FAMILIES OF LABOURERS AND CLERKS MEN WHO HAD COME AND WERE STILL COMING WITH THE RUSH OF POPULATION POURING IN AT THE RATE OF FIFTY THOUSAND A YEAR",
+      "prediction": "Minnie's flat, as the one-floor resident apartments were then being called, was in a part of West Van Buren Street, inhabited by families of laborers and clerks. Men who had come and were still coming, with the rush of population pouring in at the rate of 50,000 a year.",
+      "scores": {
+        "wer": 0.09803921568627451,
+        "insertions": 0,
+        "substitutions": 3,
+        "deletions": 2
+      },
+      "transcription_seconds": 0.2724486669758335
+    },
+    {
+      "id": "2277-149874-0001",
+      "slice": "clean",
+      "reference": "TO CARRIE THE SOUND OF THE LITTLE BELLS UPON THE HORSE CARS AS THEY TINKLED IN AND OUT OF HEARING WAS AS PLEASING AS IT WAS NOVEL",
+      "prediction": "To carry, the sound of the little bells upon the horse cars as they tingled in and out of hearing was as pleasing as it was novel.",
+      "scores": {
+        "wer": 0.07407407407407407,
+        "insertions": 0,
+        "substitutions": 2,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.18720470904372633
+    },
+    {
+      "id": "2277-149874-0002",
+      "slice": "clean",
+      "reference": "TO HIM THE PRESENCE OR ABSENCE OF HIS WIFE'S SISTER WAS A MATTER OF INDIFFERENCE",
+      "prediction": "To him, the presence or absence of his wife's sister was a matter of indifference.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.1586280830670148
+    },
+    {
+      "id": "2412-153947-0000",
+      "slice": "clean",
+      "reference": "PREFACE TO SECOND EDITION",
+      "prediction": "Preface to the second edition.",
+      "scores": {
+        "wer": 0.25,
+        "insertions": 1,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.13305841700639576
+    },
+    {
+      "id": "2412-153947-0001",
+      "slice": "clean",
+      "reference": "THIS IS A MISTAKE THOUGH A PERFECTLY NATURAL ONE",
+      "prediction": "This is a mistake though a perfectly natural one.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.14021395810414106
+    },
+    {
+      "id": "2412-153947-0002",
+      "slice": "clean",
+      "reference": "ON MY RETURN I PURPOSELY AVOIDED LOOKING INTO IT UNTIL I HAD SENT BACK MY LAST REVISES TO THE PRINTER",
+      "prediction": "On my return, I purposely avoided looking into it until I had sent back my last revises to the printer.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.1739625409245491
+    },
+    {
+      "id": "2428-83699-0000",
+      "slice": "clean",
+      "reference": "I IMAGINE THERE WERE SEVERAL KINDS OF OLD FASHIONED CHRISTMASES BUT IT COULD HARDLY BE WORSE THAN A CHOP IN MY CHAMBERS OR HORROR OF HORRORS AT THE CLUB OR MY COUSIN LUCY'S NOTION OF WHAT SHE CALLS THE FESTIVE SEASON",
+      "prediction": "I imagine there were several kinds of old-fashioned Christmases, but it could hardly be worse than a chop in my chambers or horror of horrors at the club, where my cousin Lucy's notion of what she calls the festive season.",
+      "scores": {
+        "wer": 0.07317073170731707,
+        "insertions": 0,
+        "substitutions": 2,
+        "deletions": 1
+      },
+      "transcription_seconds": 0.23177362489514053
+    },
+    {
+      "id": "2428-83699-0001",
+      "slice": "clean",
+      "reference": "FESTIVE YES",
+      "prediction": "festive? Yes.",
+      "scores": {
+        "wer": 0.5,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.12636345904320478
+    },
+    {
+      "id": "2428-83699-0002",
+      "slice": "clean",
+      "reference": "THE REPLY WAS WRITTEN IN A SPRAWLING FEMININE HAND IT WAS A LITTLE VAGUE",
+      "prediction": "The reply was written in a sprawling feminine hand. It was a little vague.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.15404583397321403
+    },
+    {
+      "id": "251-118436-0000",
+      "slice": "clean",
+      "reference": "HE WAS YOUNG NO SPEAR HAD TOUCHED HIM NO POISON LURKED IN HIS WINE",
+      "prediction": "He was young. No spear had touched him. No poison lurked in his wine.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.1585525000700727
+    },
+    {
+      "id": "251-118436-0001",
+      "slice": "clean",
+      "reference": "I TELL YOU IT IS NOT POISON SHE CRIED",
+      "prediction": "I tell you it is not poison. She cried.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.14606662502046674
+    },
+    {
+      "id": "251-118436-0002",
+      "slice": "clean",
+      "reference": "SINCE HIS BIRTH HE HAS BEEN GUARDED SO CLOSELY THAT THE CLEVEREST POISONERS OF THE EAST COULD NOT REACH HIM",
+      "prediction": "Since his birth, he has been guarded so closely that the cleverest poisonous of the East could not reach him.",
+      "scores": {
+        "wer": 0.05,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.17703570902813226
+    },
+    {
+      "id": "2803-154320-0000",
+      "slice": "clean",
+      "reference": "FORTUNATELY WILL HALLEY WAS NOT A MAN IN A HURRY AND DID NOT USE A PRESS OF CANVAS OR HIS MASTS WOULD INEVITABLY HAVE COME DOWN",
+      "prediction": "Fortunately, Will Hallie was not a man in a hurry and did not use oppressive canvas or as mass would inevitably have come down.",
+      "scores": {
+        "wer": 0.23076923076923078,
+        "insertions": 0,
+        "substitutions": 4,
+        "deletions": 2
+      },
+      "transcription_seconds": 0.2934774170862511
+    },
+    {
+      "id": "2803-154320-0001",
+      "slice": "clean",
+      "reference": "JOHN MANGLES THEREFORE HOPED THAT THE WRETCHED HULL WOULD REACH PORT WITHOUT ACCIDENT BUT IT GRIEVED HIM THAT HIS COMPANIONS SHOULD HAVE TO SUFFER SO MUCH DISCOMFORT FROM THE DEFECTIVE ARRANGEMENTS OF THE BRIG",
+      "prediction": "John Mangles therefore hoped that the wretched hall would reach port without accident, but it grieved him that his companions should have to suffer so much discomfort from the defective arrangements of the brig.",
+      "scores": {
+        "wer": 0.029411764705882353,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.3261710830265656
+    },
+    {
+      "id": "2803-154320-0002",
+      "slice": "clean",
+      "reference": "THEIR FRIENDS DID THEIR BEST TO AMUSE THEM",
+      "prediction": "Their friends did their best to amuse them.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.13744708395097405
+    },
+    {
+      "id": "2902-9006-0000",
+      "slice": "clean",
+      "reference": "ONE WHO WRITES OF SUCH AN ERA LABOURS UNDER A TROUBLESOME DISADVANTAGE",
+      "prediction": "One who writes of such an era, laborers under a troublesome disadvantage.",
+      "scores": {
+        "wer": 0.08333333333333333,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.1492830830393359
+    },
+    {
+      "id": "2902-9006-0001",
+      "slice": "clean",
+      "reference": "IN THE PRESENT CASE THAT DISADVANTAGE IS DOUBLED FOR WHILE THE SINS OF THE CHURCH HOWEVER HEINOUS WERE STILL SUCH AS ADMIT OF BEING EXPRESSED IN WORDS THE SINS OF THE HEATHEN WORLD AGAINST WHICH SHE FOUGHT WERE UTTERLY INDESCRIBABLE AND THE CHRISTIAN APOLOGIST IS THUS COMPELLED FOR THE SAKE OF DECENCY TO STATE THE CHURCH'S CASE FAR MORE WEAKLY THAN THE FACTS DESERVE",
+      "prediction": "In the present case, that disadvantage is doubled. For while the sins of the church, however heinous, were still such as admit of being expressed in words, the sins of the heathen world against which she fought were utterly indescribable, and the Christian apologist is thus compelled for the sake of decency to state the church's case far more weekly than the facts deserve.",
+      "scores": {
+        "wer": 0.015625,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.3119093329878524
+    },
+    {
+      "id": "2902-9006-0002",
+      "slice": "clean",
+      "reference": "NOT BE IT EVER REMEMBERED THAT THE SLIGHTEST SUSPICION OF IMMORALITY ATTACHES EITHER TO THE HEROINE OF THIS BOOK OR TO THE LEADING PHILOSOPHERS OF HER SCHOOL FOR SEVERAL CENTURIES",
+      "prediction": "Not be it ever remembered that the slightest suspicion of immorality attaches either to the heroine of this book, or to the leading philosophers of her school for several centuries.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.19923379202373326
+    },
+    {
+      "id": "3000-15664-0000",
+      "slice": "clean",
+      "reference": "SHASTA RAMBLES AND MODOC MEMORIES",
+      "prediction": "Shasta Rambles and Modoc Memories.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.13887191703543067
+    },
+    {
+      "id": "3000-15664-0001",
+      "slice": "clean",
+      "reference": "ARCTIC BEAUTY AND DESOLATION WITH THEIR BLESSINGS AND DANGERS ALL MAY BE FOUND HERE TO TEST THE ENDURANCE AND SKILL OF ADVENTUROUS CLIMBERS BUT FAR BETTER THAN CLIMBING THE MOUNTAIN IS GOING AROUND ITS WARM FERTILE BASE ENJOYING ITS BOUNTIES LIKE A BEE CIRCLING AROUND A BANK OF FLOWERS",
+      "prediction": "Arctic beauty and desolation with their blessings and dangers all may be found here to test the endurance and skill of adventurous climbers. But far better than climbing the mountain is going around its warm fertile base. Enjoying its bounties like a bee circling around a bank of flowers.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.2574216250795871
+    },
+    {
+      "id": "3000-15664-0002",
+      "slice": "clean",
+      "reference": "PERHAPS THE PROFESSION OF DOING GOOD MAY BE FULL BUT EVERY BODY SHOULD BE KIND AT LEAST TO HIMSELF",
+      "prediction": "Perhaps the profession of doing good may be full, but everybody should be kind at least to himself.",
+      "scores": {
+        "wer": 0.10526315789473684,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 1
+      },
+      "transcription_seconds": 0.16440287500154227
+    },
+    {
+      "id": "3081-166546-0000",
+      "slice": "clean",
+      "reference": "WHEN WE TOOK OUR SEATS AT THE BREAKFAST TABLE IT WAS WITH THE FEELING OF BEING NO LONGER LOOKED UPON AS CONNECTED IN ANY WAY WITH THIS CASE",
+      "prediction": "When we took our seats at the breakfast table, it was with the feeling of being no longer looked upon as connected in any way with this case.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.18723925005178899
+    },
+    {
+      "id": "3081-166546-0001",
+      "slice": "clean",
+      "reference": "INSTANTLY THEY ABSORBED ALL MY ATTENTION THOUGH I DARED NOT GIVE THEM A DIRECT LOOK AND CONTINUED TO OBSERVE THEM ONLY IN THE GLASS",
+      "prediction": "Instantly, they absorbed all my attention, though I did not give them a direct look, and continued to observe them only in the glass.",
+      "scores": {
+        "wer": 0.041666666666666664,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.18784058396704495
+    },
+    {
+      "id": "3081-166546-0002",
+      "slice": "clean",
+      "reference": "YES AND A VERY RESPECTABLE ONE",
+      "prediction": "Yes, and a very respectable one.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.1344335419125855
+    },
+    {
+      "id": "3170-137482-0000",
+      "slice": "clean",
+      "reference": "WITH AN EDUCATION WHICH OUGHT TO HAVE ENSURED ME AN HONOURABLE STANDING IN THE WORLD WITH SOME INTELLIGENCE WIT GOOD LITERARY AND SCIENTIFIC KNOWLEDGE AND ENDOWED WITH THOSE ACCIDENTAL PHYSICAL QUALITIES WHICH ARE SUCH A GOOD PASSPORT INTO SOCIETY I FOUND MYSELF AT THE AGE OF TWENTY THE MEAN FOLLOWER OF A SUBLIME ART IN WHICH IF GREAT TALENT IS RIGHTLY ADMIRED MEDIOCRITY IS AS RIGHTLY DESPISED",
+      "prediction": "With an education which ought to have ensured me an honorable standing in the world, with some intelligence, wit, good literary and scientific knowledge, and endowed with those accidental physical qualities which are such a good passport into society, I found myself at the age of twenty the mean follower of a sublime art, in which, if great talent is rightly admired, mediocrity is as rightly despised.",
+      "scores": {
+        "wer": 0.014925373134328358,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.31530725001357496
+    },
+    {
+      "id": "3170-137482-0001",
+      "slice": "clean",
+      "reference": "I WAS COMPELLED BY POVERTY TO BECOME A MEMBER OF A MUSICAL BAND IN WHICH I COULD EXPECT NEITHER ESTEEM NOR CONSIDERATION AND I WAS WELL AWARE THAT I SHOULD BE THE LAUGHING STOCK OF THE PERSONS WHO HAD KNOWN ME AS A DOCTOR IN DIVINITY AS AN ECCLESIASTIC AND AS AN OFFICER IN THE ARMY AND HAD WELCOMED ME IN THE HIGHEST SOCIETY",
+      "prediction": "I was compelled by poverty to become a member of a musical band, in which I could expect neither esteem nor consideration, and I was well aware that I should be the laughingstock of the persons who had known me as a doctor in Divinity, as an ecclesiastic and as an officer in the Army, and had welcomed me in the highest society.",
+      "scores": {
+        "wer": 0.03125,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 1
+      },
+      "transcription_seconds": 0.29531212500296533
+    },
+    {
+      "id": "3170-137482-0002",
+      "slice": "clean",
+      "reference": "I FELT THAT IN MY FIRST PROFESSION AS I WAS NOT BLESSED WITH THE VOCATION NECESSARY TO IT I SHOULD HAVE SUCCEEDED ONLY BY DINT OF HYPOCRISY AND I SHOULD HAVE BEEN DESPICABLE IN MY OWN ESTIMATION EVEN IF I HAD SEEN THE PURPLE MANTLE ON MY SHOULDERS FOR THE GREATEST DIGNITIES CANNOT SILENCE A MAN'S OWN CONSCIENCE",
+      "prediction": "I felt that, in my first profession, as I was not blessed with the vocation necessary to it, I should have succeeded only by dent of hypocrisy, and I should have been despicable in my own estimation, even if I had seen the purple mantle on my shoulders, for the greatest dignities cannot silence a man's own conscience.\"",
+      "scores": {
+        "wer": 0.034482758620689655,
+        "insertions": 0,
+        "substitutions": 2,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.28950366703793406
+    },
+    {
+      "id": "3536-23268-0000",
+      "slice": "clean",
+      "reference": "SIR EDWARD NOT WHOLLY DISCOURAGED BY THE DENIAL WITH WHICH DORRIFORTH HAD WITH DELICACY ACQUAINTED HIM STILL HOPED FOR A KIND RECEPTION AND WAS SO OFTEN AT THE HOUSE OF MISSUS HORTON THAT LORD FREDERICK'S JEALOUSY WAS EXCITED AND THE TORTURES HE SUFFERED IN CONSEQUENCE CONVINCED HIM BEYOND A DOUBT OF THE SINCERITY OF HIS AFFECTION",
+      "prediction": "Sir Edward, not wholly discouraged by the denial with which Dora-forth had, with delicacy acquainted him, still hoped for a kind reception, and was so often at the house of Mrs. Horton, that Lord Frederick's jealousy was excited, and the tortures he suffered in consequence convinced him beyond a doubt of the sincerity of his affection.",
+      "scores": {
+        "wer": 0.03571428571428571,
+        "insertions": 0,
+        "substitutions": 2,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.4098981670103967
+    },
+    {
+      "id": "3536-23268-0001",
+      "slice": "clean",
+      "reference": "EVERY TIME HE BEHELD THE OBJECT OF HIS PASSION FOR HE STILL CONTINUED HIS VISITS THOUGH NOT SO FREQUENTLY AS HERETOFORE HE PLEADED HIS CAUSE WITH SUCH ARDOUR THAT MISS WOODLEY WHO WAS SOMETIMES PRESENT AND EVER COMPASSIONATE COULD NOT RESIST WISHING HIM SUCCESS",
+      "prediction": "Every time he beheld the object of his passion, for he still continued his visits, though not so frequently as here to four, he pleaded his cause with such ardor that Miss Woodley, who was sometimes present and ever compassionate, could not resist wishing him success.",
+      "scores": {
+        "wer": 0.09090909090909091,
+        "insertions": 2,
+        "substitutions": 2,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.25365833297837526
+    },
+    {
+      "id": "3536-23268-0002",
+      "slice": "clean",
+      "reference": "YET DID THE WATCHFUL MISS WOODLEY OFTENTIMES HEAR A SIGH ESCAPE FROM HER UNKNOWN TO HERSELF TILL SHE WAS REMINDED OF IT AND THEN A SUDDEN BLUSH WOULD INSTANTLY OVERSPREAD HER FACE",
+      "prediction": "Yet did the watchful miss Woodley oftentimes hear a sigh escape from her unknown to herself till she was reminded of it, and then a sudden blush would instantly over-spread her face.",
+      "scores": {
+        "wer": 0.03125,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.21267574990633875
+    }
+  ],
+  "performance": {
+    "total_transcription_seconds": 11.851644586538896
+  },
+  "dataset_fingerprint": "08e71035e8037c11c1e0c771ea78903cec0ce20cccea1d99110ac95bd907a47f",
+  "normalization_version": "v1"
+}
