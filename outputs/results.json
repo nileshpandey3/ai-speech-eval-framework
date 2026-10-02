@@ -1,0 +1,47 @@
+{
+  "model": {
+    "name": "tiny.en",
+    "device": "cpu",
+    "compute_type": "int8",
+    "beam_size": 1,
+    "temperature": 0
+  },
+  "sample_count": 2,
+  "corpus_scores": {
+    "wer": 0.36,
+    "insertions": 0,
+    "substitutions": 5,
+    "deletions": 4
+  },
+  "clips": [
+    {
+      "id": "1272-141231-0000",
+      "slice": "clean",
+      "reference": "A MAN SAID TO THE UNIVERSE SIR I EXIST",
+      "prediction": "A man said to the universe, Sir, I exist.",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.17463441693689674
+    },
+    {
+      "id": "1272-141231-0001",
+      "slice": "clean",
+      "reference": "SWEAT COVERED BRION'S BODY TRICKLING INTO THE TIGHT LOINCLOTH THAT WAS THE ONLY GARMENT HE WORE",
+      "prediction": "Sweat-covered Breon's body trickling into the tight-laying cloths that was the onlygerman-hue-war.",
+      "scores": {
+        "wer": 0.5625,
+        "insertions": 0,
+        "substitutions": 5,
+        "deletions": 4
+      },
+      "transcription_seconds": 0.19451737497001886
+    }
+  ],
+  "performance": {
+    "total_transcription_seconds": 0.3691517919069156
+  }
+}

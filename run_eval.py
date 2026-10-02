@@ -1,9 +1,9 @@
 import json
 from pathlib import Path
+from time import perf_counter
 
 from faster_whisper import WhisperModel
-
-from speech_eval.score import score_transcript
+from src.speech_eval.score import score_corpus, score_transcript
 from speech_eval.transcribe import transcribe_audio
 
 
@@ -17,15 +17,58 @@ def main():
 
     model = WhisperModel("tiny.en", device="cpu", compute_type="int8")
 
+    references = []
+    predictions = []
+    clip_results = []
+
     for sample in samples:
+        start = perf_counter()
         prediction = transcribe_audio(model, sample["audio"])
+        transcription_seconds = perf_counter()-start
+
+        references.append(sample["reference"])
+        predictions.append(prediction)
+
         result = score_transcript(sample["reference"], prediction)
 
-        print("Clip:", sample["id"])
-        print("Reference:", sample["reference"])
-        print("Prediction:", prediction)
-        print("Scores:", result)
-        print()
+        clip_results.append({
+            "id": sample["id"],
+            "slice": sample["slice"],
+            "reference": sample["reference"],
+            "prediction": prediction,
+            "scores": result,
+            "transcription_seconds": transcription_seconds,
+        })
+
+    total_transcription_seconds = sum(
+        clip["transcription_seconds"] for clip in clip_results
+    )
+
+    corpus_result = score_corpus(references, predictions)
+    evaluation = {
+        "model": {
+            "name": "tiny.en",
+            "device": "cpu",
+            "compute_type": "int8",
+            "beam_size": 1,
+            "temperature": 0,
+        },
+        "sample_count": len(clip_results),
+        "corpus_scores": corpus_result,
+        "clips": clip_results,
+        "performance": {
+            "total_transcription_seconds": total_transcription_seconds,
+        },
+    }
+
+    output_path = Path("outputs/results.json")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    with output_path.open("w", encoding="utf-8") as file:
+        json.dump(evaluation, file, indent=2, ensure_ascii=False)
+
+    print("Results saved to:", output_path)
+    return evaluation
 
 
 if __name__ == "__main__":
