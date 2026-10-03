@@ -12,10 +12,10 @@
   },
   "sample_count": 60,
   "corpus_scores": {
-    "wer": 0.05489417989417989,
-    "insertions": 9,
-    "substitutions": 58,
-    "deletions": 16
+    "wer": 0.056216931216931214,
+    "insertions": 8,
+    "substitutions": 60,
+    "deletions": 17
   },
   "clips": [
     {
@@ -29,20 +29,20 @@
         "substitutions": 1,
         "deletions": 0
       },
-      "transcription_seconds": 0.1877242079935968
+      "transcription_seconds": 0.4582113739999727
     },
     {
       "id": "1272-128104-0001",
       "slice": "clean",
       "reference": "NOR IS MISTER QUILTER'S MANNER LESS INTERESTING THAN HIS MATTER",
-      "prediction": "Nor is Mr. Quilter's manner less interesting than his matter.",
+      "prediction": "Nor is Mr. Colter's manner less interesting than his matter.",
       "scores": {
-        "wer": 0.1,
+        "wer": 0.2,
         "insertions": 0,
-        "substitutions": 1,
+        "substitutions": 2,
         "deletions": 0
       },
-      "transcription_seconds": 0.15156308293808252
+      "transcription_seconds": 0.38744350899997926
     },
     {
       "id": "1272-128104-0002",
@@ -55,7 +55,7 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.2087904999498278
+      "transcription_seconds": 0.4842147299999624
     },
     {
       "id": "1462-170138-0000",
@@ -68,7 +68,7 @@
         "substitutions": 2,
         "deletions": 1
       },
-      "transcription_seconds": 0.20769625005777925
+      "transcription_seconds": 0.4733865759999958
     },
     {
       "id": "1462-170138-0001",
@@ -81,7 +81,7 @@
         "substitutions": 1,
         "deletions": 0
       },
-      "transcription_seconds": 0.15369191602803767
+      "transcription_seconds": 0.37335440900000094
     },
     {
       "id": "1462-170138-0002",
@@ -94,7 +94,7 @@
         "substitutions": 1,
         "deletions": 1
       },
-      "transcription_seconds": 0.16422433406114578
+      "transcription_seconds": 0.40264447100003053
     },
     {
       "id": "1673-143396-0000",
@@ -107,20 +107,20 @@
         "substitutions": 3,
         "deletions": 0
       },
-      "transcription_seconds": 0.25663691700901836
+      "transcription_seconds": 0.5661563549999755
     },
     {
       "id": "1673-143396-0001",
       "slice": "clean",
       "reference": "THEIR CHURCHES HAVE DISAPPEARED THEIR BOOKS ARE OBLITERATED THEIR OBSCURE FREEDOM MIGHT ALLOW A LATITUDE OF FAITH AND THE SOFTNESS OF THEIR INFANT CREED WOULD BE VARIOUSLY MOULDED BY THE ZEAL OR PRUDENCE OF THREE HUNDRED YEARS",
-      "prediction": "Their churches have disappeared, their books are obliterated, their obscure freedom might allow a latitude of faith, and the softness of their infant creed would be variously molded by the zeal or prudence of 300 years.",
+      "prediction": "Their churches have disappeared, their books are obliterated, their obscure freedom might allow latitude to faith, and the softness of their infant creed would be variously molded by the zeal or prudence of 300 years.",
       "scores": {
-        "wer": 0.08108108108108109,
+        "wer": 0.13513513513513514,
         "insertions": 0,
-        "substitutions": 2,
-        "deletions": 1
+        "substitutions": 3,
+        "deletions": 2
       },
-      "transcription_seconds": 0.2327021249802783
+      "transcription_seconds": 0.5174850289999995
     },
     {
       "id": "1673-143396-0002",
@@ -133,7 +133,7 @@
         "substitutions": 1,
         "deletions": 0
       },
-      "transcription_seconds": 0.17394279199652374
+      "transcription_seconds": 0.43244763699999567
     },
     {
       "id": "174-168635-0000",
@@ -146,7 +146,7 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.14470195898320526
+      "transcription_seconds": 0.3657907410000121
     },
     {
       "id": "174-168635-0001",
@@ -159,7 +159,7 @@
         "substitutions": 1,
         "deletions": 1
       },
-      "transcription_seconds": 0.14707504108082503
+      "transcription_seconds": 0.3681593670000325
     },
     {
       "id": "174-168635-0002",
@@ -172,7 +172,7 @@
         "substitutions": 1,
         "deletions": 1
       },
-      "transcription_seconds": 0.2425610419595614
+      "transcription_seconds": 0.5523346759999868
     },
     {
       "id": "1919-142785-0000",
@@ -185,20 +185,20 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.12854437495116144
+      "transcription_seconds": 0.3522780200000284
     },
     {
       "id": "1919-142785-0001",
       "slice": "clean",
       "reference": "LONG PEPPER THIS IS THE PRODUCE OF A DIFFERENT PLANT FROM THAT WHICH PRODUCES THE BLACK IT CONSISTING OF THE HALF RIPE FLOWER HEADS OF WHAT NATURALISTS CALL PIPER LONGUM AND CHABA",
-      "prediction": "Long pepper. This is the produce of a different plant from that which produces the black. It consisting of the half-right flower heads of what naturalists call Piper Longum and Chaba.",
+      "prediction": "Long pepper. This is the produce of a different plant from that which produces the black. It consists of the half-right flower heads of what naturalists call piper longum and chaba.",
       "scores": {
-        "wer": 0.0625,
+        "wer": 0.09375,
         "insertions": 0,
-        "substitutions": 1,
+        "substitutions": 2,
         "deletions": 1
       },
-      "transcription_seconds": 0.21382449998054653
+      "transcription_seconds": 0.49462886699996034
     },
     {
       "id": "1919-142785-0002",
@@ -211,20 +211,20 @@
         "substitutions": 1,
         "deletions": 0
       },
-      "transcription_seconds": 0.1957825419958681
+      "transcription_seconds": 0.4671460029999821
     },
     {
       "id": "1988-147956-0000",
       "slice": "clean",
       "reference": "FUCHS BROUGHT UP A SACK OF POTATOES AND A PIECE OF CURED PORK FROM THE CELLAR AND GRANDMOTHER PACKED SOME LOAVES OF SATURDAY'S BREAD A JAR OF BUTTER AND SEVERAL PUMPKIN PIES IN THE STRAW OF THE WAGON BOX",
-      "prediction": "Fux brought up a sack of potatoes and a piece of cured pork from the cellar, and a grandmother packed some loaves of Saturday's bread, a jar of butter, and several pumpkin pies in the straw of the wagon box.",
+      "prediction": "Fux brought up a sack of potatoes and a piece of cured pork from the cellar, and Grandmother packed some loaves of Saturday's bread, a jar of butter, and several pumpkin pies in the straw of the wagon box.",
       "scores": {
-        "wer": 0.05128205128205128,
-        "insertions": 1,
+        "wer": 0.02564102564102564,
+        "insertions": 0,
         "substitutions": 1,
         "deletions": 0
       },
-      "transcription_seconds": 0.23498929105699062
+      "transcription_seconds": 0.5518736330000138
     },
     {
       "id": "1988-147956-0001",
@@ -237,7 +237,7 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.22359704202972353
+      "transcription_seconds": 0.5259787250000159
     },
     {
       "id": "1988-147956-0002",
@@ -250,33 +250,33 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.15568366600200534
+      "transcription_seconds": 0.3819745019999914
     },
     {
       "id": "1993-147149-0000",
       "slice": "clean",
       "reference": "HOW INFINITE THE WEALTH OF LOVE AND HOPE GARNERED IN THESE SAME TINY TREASURE HOUSES AND OH",
-      "prediction": "How infinite the wealth of love and hope garnered in these same tiny treasure houses and oh.",
+      "prediction": "How infinite the wealth of love and hope garnered in these same tiny treasure houses and oh",
       "scores": {
         "wer": 0.0,
         "insertions": 0,
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.16288987500593066
+      "transcription_seconds": 0.39895244299998467
     },
     {
       "id": "1993-147149-0001",
       "slice": "clean",
       "reference": "WHAT BANKRUPTS IN THE WORLD WE FEEL WHEN DEATH LIKE SOME REMORSELESS CREDITOR SEIZES ON ALL WE FONDLY THOUGHT OUR OWN THE TWINS",
-      "prediction": "What bankrupts in the world we feel when death like some remorseless creditor ceases on all we fondly thought our own The twins",
+      "prediction": "What bankrupts in the world we feel when death, like some remorseless creditor, seizes on all we fondly thought our own. The twins.",
       "scores": {
-        "wer": 0.043478260869565216,
+        "wer": 0.0,
         "insertions": 0,
-        "substitutions": 1,
+        "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.18251566600520164
+      "transcription_seconds": 0.46372661700002027
     },
     {
       "id": "1993-147149-0002",
@@ -289,7 +289,7 @@
         "substitutions": 2,
         "deletions": 1
       },
-      "transcription_seconds": 0.16474620799999684
+      "transcription_seconds": 0.40666769900002464
     },
     {
       "id": "2035-147960-0000",
@@ -302,7 +302,7 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.20213637501001358
+      "transcription_seconds": 0.47841945499999383
     },
     {
       "id": "2035-147960-0001",
@@ -315,33 +315,33 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.15508158307056874
+      "transcription_seconds": 0.36107711900001505
     },
     {
       "id": "2035-147960-0002",
       "slice": "clean",
       "reference": "ONE DAY WHEN I RODE OVER TO THE SHIMERDAS I FOUND ANTONIA STARTING OFF ON FOOT FOR RUSSIAN PETER'S HOUSE TO BORROW A SPADE AMBROSCH NEEDED",
-      "prediction": "One day when I rode over to the Shemerdas, I found Antonea starting off on foot for Russian Peter's house to borrow a spade and brush needed.",
+      "prediction": "One day when I rode over to the Shemerdas, I found Antonea starting off on foot for Russian Peter's house to borrow a spade and broch needed.",
       "scores": {
         "wer": 0.15384615384615385,
         "insertions": 1,
         "substitutions": 3,
         "deletions": 0
       },
-      "transcription_seconds": 0.203644625027664
+      "transcription_seconds": 0.4820820500000309
     },
     {
       "id": "2078-142845-0000",
       "slice": "clean",
       "reference": "KIRKLEATHAM YEAST",
-      "prediction": "Curply thumb yeast.",
+      "prediction": "Curply them yeast.",
       "scores": {
         "wer": 1.0,
         "insertions": 1,
         "substitutions": 1,
         "deletions": 0
       },
-      "transcription_seconds": 0.13049970800057054
+      "transcription_seconds": 0.3451144299999669
     },
     {
       "id": "2078-142845-0001",
@@ -354,7 +354,7 @@
         "substitutions": 1,
         "deletions": 1
       },
-      "transcription_seconds": 0.1259733340702951
+      "transcription_seconds": 0.34451619000003575
     },
     {
       "id": "2078-142845-0002",
@@ -367,7 +367,7 @@
         "substitutions": 1,
         "deletions": 1
       },
-      "transcription_seconds": 0.13155883294530213
+      "transcription_seconds": 0.35782348300006106
     },
     {
       "id": "2086-149214-0000",
@@ -380,7 +380,7 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.20116108399815857
+      "transcription_seconds": 0.47353457300005175
     },
     {
       "id": "2086-149214-0001",
@@ -393,7 +393,7 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.16889412503223866
+      "transcription_seconds": 0.4021647729999813
     },
     {
       "id": "2086-149214-0002",
@@ -406,33 +406,33 @@
         "substitutions": 5,
         "deletions": 0
       },
-      "transcription_seconds": 0.2753705830546096
+      "transcription_seconds": 0.6135330289999956
     },
     {
       "id": "2277-149874-0000",
       "slice": "clean",
       "reference": "MINNIE'S FLAT AS THE ONE FLOOR RESIDENT APARTMENTS WERE THEN BEING CALLED WAS IN A PART OF WEST VAN BUREN STREET INHABITED BY FAMILIES OF LABOURERS AND CLERKS MEN WHO HAD COME AND WERE STILL COMING WITH THE RUSH OF POPULATION POURING IN AT THE RATE OF FIFTY THOUSAND A YEAR",
-      "prediction": "Minnie's flat, as the one-floor resident apartments were then being called, was in a part of West Van Buren Street, inhabited by families of laborers and clerks. Men who had come and were still coming, with the rush of population pouring in at the rate of 50,000 a year.",
+      "prediction": "Minnie's flat as the one-floor resident apartments were then being called, was in a part of West Van Buren Street inhabited by families of laborers and clerks. Men who had come and were still coming with the rush of population pouring in at the rate of 50,000 a year.",
       "scores": {
         "wer": 0.09803921568627451,
         "insertions": 0,
         "substitutions": 3,
         "deletions": 2
       },
-      "transcription_seconds": 0.2724486669758335
+      "transcription_seconds": 0.585129378999909
     },
     {
       "id": "2277-149874-0001",
       "slice": "clean",
       "reference": "TO CARRIE THE SOUND OF THE LITTLE BELLS UPON THE HORSE CARS AS THEY TINKLED IN AND OUT OF HEARING WAS AS PLEASING AS IT WAS NOVEL",
-      "prediction": "To carry, the sound of the little bells upon the horse cars as they tingled in and out of hearing was as pleasing as it was novel.",
+      "prediction": "To carry the sound of the little bells upon the horse cars as they tingled in and out of hearing was as pleasing as it was novel.",
       "scores": {
         "wer": 0.07407407407407407,
         "insertions": 0,
         "substitutions": 2,
         "deletions": 0
       },
-      "transcription_seconds": 0.18720470904372633
+      "transcription_seconds": 0.4416908460000286
     },
     {
       "id": "2277-149874-0002",
@@ -445,7 +445,7 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.1586280830670148
+      "transcription_seconds": 0.39983636199997363
     },
     {
       "id": "2412-153947-0000",
@@ -458,7 +458,7 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.13305841700639576
+      "transcription_seconds": 0.3441128459999163
     },
     {
       "id": "2412-153947-0001",
@@ -471,7 +471,7 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.14021395810414106
+      "transcription_seconds": 0.36013493899997684
     },
     {
       "id": "2412-153947-0002",
@@ -484,20 +484,20 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.1739625409245491
+      "transcription_seconds": 0.4187158879999515
     },
     {
       "id": "2428-83699-0000",
       "slice": "clean",
       "reference": "I IMAGINE THERE WERE SEVERAL KINDS OF OLD FASHIONED CHRISTMASES BUT IT COULD HARDLY BE WORSE THAN A CHOP IN MY CHAMBERS OR HORROR OF HORRORS AT THE CLUB OR MY COUSIN LUCY'S NOTION OF WHAT SHE CALLS THE FESTIVE SEASON",
-      "prediction": "I imagine there were several kinds of old-fashioned Christmases, but it could hardly be worse than a chop in my chambers or horror of horrors at the club, where my cousin Lucy's notion of what she calls the festive season.",
+      "prediction": "I imagine there were several kinds of old-fashioned Christmases, but it could hardly be worse than a chop in my chambers, or horror of horrors at the club, where my cousin Lucy's notion of what she calls the festive season.",
       "scores": {
         "wer": 0.07317073170731707,
         "insertions": 0,
         "substitutions": 2,
         "deletions": 1
       },
-      "transcription_seconds": 0.23177362489514053
+      "transcription_seconds": 0.5312702209999998
     },
     {
       "id": "2428-83699-0001",
@@ -510,7 +510,7 @@
         "substitutions": 1,
         "deletions": 0
       },
-      "transcription_seconds": 0.12636345904320478
+      "transcription_seconds": 0.33256042599998636
     },
     {
       "id": "2428-83699-0002",
@@ -523,7 +523,7 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.15404583397321403
+      "transcription_seconds": 0.37648390599997583
     },
     {
       "id": "251-118436-0000",
@@ -536,7 +536,7 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.1585525000700727
+      "transcription_seconds": 0.38967337400004
     },
     {
       "id": "251-118436-0001",
@@ -549,7 +549,7 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.14606662502046674
+      "transcription_seconds": 0.37392036300002474
     },
     {
       "id": "251-118436-0002",
@@ -562,20 +562,20 @@
         "substitutions": 1,
         "deletions": 0
       },
-      "transcription_seconds": 0.17703570902813226
+      "transcription_seconds": 0.41941543699999784
     },
     {
       "id": "2803-154320-0000",
       "slice": "clean",
       "reference": "FORTUNATELY WILL HALLEY WAS NOT A MAN IN A HURRY AND DID NOT USE A PRESS OF CANVAS OR HIS MASTS WOULD INEVITABLY HAVE COME DOWN",
-      "prediction": "Fortunately, Will Hallie was not a man in a hurry and did not use oppressive canvas or as mass would inevitably have come down.",
+      "prediction": "Fortunately, Will Hallie was not a man in a hurry and did not use oppressive canvas, or as mass would inevitably have come down.",
       "scores": {
         "wer": 0.23076923076923078,
         "insertions": 0,
         "substitutions": 4,
         "deletions": 2
       },
-      "transcription_seconds": 0.2934774170862511
+      "transcription_seconds": 0.44089712999993935
     },
     {
       "id": "2803-154320-0001",
@@ -588,7 +588,7 @@
         "substitutions": 1,
         "deletions": 0
       },
-      "transcription_seconds": 0.3261710830265656
+      "transcription_seconds": 0.7479457439999351
     },
     {
       "id": "2803-154320-0002",
@@ -601,7 +601,7 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.13744708395097405
+      "transcription_seconds": 0.3666110920000847
     },
     {
       "id": "2902-9006-0000",
@@ -614,7 +614,7 @@
         "substitutions": 1,
         "deletions": 0
       },
-      "transcription_seconds": 0.1492830830393359
+      "transcription_seconds": 0.3791602690000673
     },
     {
       "id": "2902-9006-0001",
@@ -627,20 +627,20 @@
         "substitutions": 1,
         "deletions": 0
       },
-      "transcription_seconds": 0.3119093329878524
+      "transcription_seconds": 0.6787864100000434
     },
     {
       "id": "2902-9006-0002",
       "slice": "clean",
       "reference": "NOT BE IT EVER REMEMBERED THAT THE SLIGHTEST SUSPICION OF IMMORALITY ATTACHES EITHER TO THE HEROINE OF THIS BOOK OR TO THE LEADING PHILOSOPHERS OF HER SCHOOL FOR SEVERAL CENTURIES",
-      "prediction": "Not be it ever remembered that the slightest suspicion of immorality attaches either to the heroine of this book, or to the leading philosophers of her school for several centuries.",
+      "prediction": "Not be it ever remembered that the slightest suspicion of immorality attaches either to the heroine of this book or to the leading philosophers of her school for several centuries.",
       "scores": {
         "wer": 0.0,
         "insertions": 0,
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.19923379202373326
+      "transcription_seconds": 0.48059600699991734
     },
     {
       "id": "3000-15664-0000",
@@ -653,7 +653,7 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.13887191703543067
+      "transcription_seconds": 0.35487414900001113
     },
     {
       "id": "3000-15664-0001",
@@ -666,7 +666,7 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.2574216250795871
+      "transcription_seconds": 0.5751397920000727
     },
     {
       "id": "3000-15664-0002",
@@ -679,7 +679,7 @@
         "substitutions": 1,
         "deletions": 1
       },
-      "transcription_seconds": 0.16440287500154227
+      "transcription_seconds": 0.39974599999993643
     },
     {
       "id": "3081-166546-0000",
@@ -692,7 +692,7 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.18723925005178899
+      "transcription_seconds": 0.4593584520000604
     },
     {
       "id": "3081-166546-0001",
@@ -705,7 +705,7 @@
         "substitutions": 1,
         "deletions": 0
       },
-      "transcription_seconds": 0.18784058396704495
+      "transcription_seconds": 0.4561407529999997
     },
     {
       "id": "3081-166546-0002",
@@ -718,20 +718,20 @@
         "substitutions": 0,
         "deletions": 0
       },
-      "transcription_seconds": 0.1344335419125855
+      "transcription_seconds": 0.3556128619999299
     },
     {
       "id": "3170-137482-0000",
       "slice": "clean",
       "reference": "WITH AN EDUCATION WHICH OUGHT TO HAVE ENSURED ME AN HONOURABLE STANDING IN THE WORLD WITH SOME INTELLIGENCE WIT GOOD LITERARY AND SCIENTIFIC KNOWLEDGE AND ENDOWED WITH THOSE ACCIDENTAL PHYSICAL QUALITIES WHICH ARE SUCH A GOOD PASSPORT INTO SOCIETY I FOUND MYSELF AT THE AGE OF TWENTY THE MEAN FOLLOWER OF A SUBLIME ART IN WHICH IF GREAT TALENT IS RIGHTLY ADMIRED MEDIOCRITY IS AS RIGHTLY DESPISED",
-      "prediction": "With an education which ought to have ensured me an honorable standing in the world, with some intelligence, wit, good literary and scientific knowledge, and endowed with those accidental physical qualities which are such a good passport into society, I found myself at the age of twenty the mean follower of a sublime art, in which, if great talent is rightly admired, mediocrity is as rightly despised.",
+      "prediction": "With an education which ought to have ensured me an honorable standing in the world, with some intelligence, wit, good literary and scientific knowledge, and endowed with those accidental physical qualities which are such a good passport into society, I found myself at the age of twenty, the mean follower of a sublime art, in which, if great talent is rightly admired, mediocrity is as rightly despised.",
       "scores": {
         "wer": 0.014925373134328358,
         "insertions": 0,
         "substitutions": 1,
         "deletions": 0
       },
-      "transcription_seconds": 0.31530725001357496
+      "transcription_seconds": 0.9434006400000499
     },
     {
       "id": "3170-137482-0001",
@@ -744,20 +744,20 @@
         "substitutions": 1,
         "deletions": 1
       },
-      "transcription_seconds": 0.29531212500296533
+      "transcription_seconds": 0.6387152360000528
     },
     {
       "id": "3170-137482-0002",
       "slice": "clean",
       "reference": "I FELT THAT IN MY FIRST PROFESSION AS I WAS NOT BLESSED WITH THE VOCATION NECESSARY TO IT I SHOULD HAVE SUCCEEDED ONLY BY DINT OF HYPOCRISY AND I SHOULD HAVE BEEN DESPICABLE IN MY OWN ESTIMATION EVEN IF I HAD SEEN THE PURPLE MANTLE ON MY SHOULDERS FOR THE GREATEST DIGNITIES CANNOT SILENCE A MAN'S OWN CONSCIENCE",
-      "prediction": "I felt that, in my first profession, as I was not blessed with the vocation necessary to it, I should have succeeded only by dent of hypocrisy, and I should have been despicable in my own estimation, even if I had seen the purple mantle on my shoulders, for the greatest dignities cannot silence a man's own conscience.\"",
+      "prediction": "I felt that, in my first profession, as I was not blessed with the vocation necessary to it, I should have succeeded only by dent of hypocrisy, and I should have been despicable in my own estimation, even if I had seen the purple mantle on my shoulders, for the greatest dignity, cannot silence a man's own conscience.",
       "scores": {
         "wer": 0.034482758620689655,
         "insertions": 0,
         "substitutions": 2,
         "deletions": 0
       },
-      "transcription_seconds": 0.28950366703793406
+      "transcription_seconds": 0.8899725769999804
     },
     {
       "id": "3536-23268-0000",
@@ -770,7 +770,7 @@
         "substitutions": 2,
         "deletions": 0
       },
-      "transcription_seconds": 0.4098981670103967
+      "transcription_seconds": 0.88804863200005
     },
     {
       "id": "3536-23268-0001",
@@ -783,7 +783,7 @@
         "substitutions": 2,
         "deletions": 0
       },
-      "transcription_seconds": 0.25365833297837526
+      "transcription_seconds": 0.5677524300000414
     },
     {
       "id": "3536-23268-0002",
@@ -796,11 +796,11 @@
         "substitutions": 1,
         "deletions": 0
       },
-      "transcription_seconds": 0.21267574990633875
+      "transcription_seconds": 0.48320099299996855
     }
   ],
   "performance": {
-    "total_transcription_seconds": 11.851644586538896
+    "total_transcription_seconds": 28.362023640000018
   },
   "dataset_fingerprint": "08e71035e8037c11c1e0c771ea78903cec0ce20cccea1d99110ac95bd907a47f",
   "normalization_version": "v1"
