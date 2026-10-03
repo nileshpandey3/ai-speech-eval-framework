@@ -5,6 +5,7 @@ from time import perf_counter
 
 from faster_whisper import WhisperModel
 
+from speech_eval.providers import PROVIDERS, create_transcriber
 from speech_eval.dataset import fingerprint_dataset
 from speech_eval.normalize import NORMALIZATION_VERSION
 from speech_eval.score import score_corpus, score_transcript
@@ -93,6 +94,13 @@ def main(
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Evaluate speech transcription accuracy."
+    )
+
+    parser.add_argument(
+        "--provider",
+        choices=sorted(PROVIDERS),
+        default="whisper",
+        help="Transcription provider to evaluate",
     )
 
     parser.add_argument(
