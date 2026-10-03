@@ -32,12 +32,19 @@ def transcribe_deepgram(audio_path: str, api_key: str) -> dict:
     response.raise_for_status()
     result = response.json()
 
-    transcript = result["results"]["channels"][0]["alternatives"][0]["transcript"]
+    try:
+        transcript = result["results"]["channels"][0]["alternatives"][0]["transcript"]
+        metadata = result["metadata"]
+    except (KeyError, IndexError, TypeError) as error:
+        raise ValueError("Malformed Deepgram response") from error
 
     if not isinstance(transcript, str):
         raise ValueError("Deepgram returned an invalid transcript")
 
+    if not isinstance(metadata, dict):
+        raise ValueError("Deepgram returned invalid metadata")
+
     return {
         "text": transcript,
-        "metadata": result["metadata"],
+        "metadata": metadata,
     }
