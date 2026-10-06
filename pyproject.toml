@@ -34,4 +34,5 @@ markers = [
     "comparison: runs comparison tests",
     "transcript_word_scores",
     "benchmark: runs the broader speech evaluation",
+    "deepgram_adapter: tests Deepgram integration without network calls",
 ]
