@@ -1,0 +1,398 @@
+{
+  "provider": "deepgram",
+  "model": {
+    "name": "nova-3",
+    "provider": "deepgram"
+  },
+  "decoding": {
+    "language": "en",
+    "smart_format": false,
+    "punctuate": false
+  },
+  "sample_count": 12,
+  "corpus_scores": {
+    "wer": 0.014545454545454545,
+    "insertions": 0,
+    "substitutions": 3,
+    "deletions": 1
+  },
+  "clips": [
+    {
+      "id": "1272-128104-0000",
+      "slice": "clean",
+      "reference": "MISTER QUILTER IS THE APOSTLE OF THE MIDDLE CLASSES AND WE ARE GLAD TO WELCOME HIS GOSPEL",
+      "prediction": "mister quilter is the apostle of the middle classes and we are glad to welcome his gospel",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.6824354999698699,
+      "transcription_metadata": {
+        "transaction_key": "deprecated",
+        "request_id": "01a11356-2415-7d03-a855-822a6994b192",
+        "sha256": "4e25e22555cd16e90edb0a3b49fdcf1fe652b2a1250ab643634db33895c75b41",
+        "created": "2026-10-06T22:29:35.177Z",
+        "duration": 5.855,
+        "channels": 1,
+        "models": [
+          "2187e11a-3532-4498-b076-81fa530bdd49"
+        ],
+        "model_info": {
+          "2187e11a-3532-4498-b076-81fa530bdd49": {
+            "name": "general-nova-3",
+            "version": "2025-07-31.0",
+            "arch": "nova-3"
+          }
+        }
+      }
+    },
+    {
+      "id": "1272-128104-0001",
+      "slice": "clean",
+      "reference": "NOR IS MISTER QUILTER'S MANNER LESS INTERESTING THAN HIS MATTER",
+      "prediction": "nor is mister quilter's manner less interesting than his matter",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.33141941705252975,
+      "transcription_metadata": {
+        "transaction_key": "deprecated",
+        "request_id": "01a11356-25fb-7d33-8618-5f56d9356f3e",
+        "sha256": "46a9d58622b4675b29564da2d9ba73e702241c5fa969f12c387cad4aa984276a",
+        "created": "2026-10-06T22:29:35.457Z",
+        "duration": 4.815,
+        "channels": 1,
+        "models": [
+          "2187e11a-3532-4498-b076-81fa530bdd49"
+        ],
+        "model_info": {
+          "2187e11a-3532-4498-b076-81fa530bdd49": {
+            "name": "general-nova-3",
+            "version": "2025-07-31.0",
+            "arch": "nova-3"
+          }
+        }
+      }
+    },
+    {
+      "id": "1462-170138-0000",
+      "slice": "clean",
+      "reference": "HE HAD WRITTEN A NUMBER OF BOOKS HIMSELF AMONG THEM A HISTORY OF DANCING A HISTORY OF COSTUME A KEY TO SHAKESPEARE'S SONNETS A STUDY OF THE POETRY OF ERNEST DOWSON ET CETERA",
+      "prediction": "he had written a number of books himself among them a history of dancing a history of costume a key to shakespeare's sonnets a study of the poetry of ernest dowson etcetera",
+      "scores": {
+        "wer": 0.06060606060606061,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 1
+      },
+      "transcription_seconds": 0.28889212501235306,
+      "transcription_metadata": {
+        "transaction_key": "deprecated",
+        "request_id": "01a11356-272b-7ef3-b0c7-77b91fcae427",
+        "sha256": "0db52d84970679037bc6c95364086159db5f051e3ba14d723efb7000facf23b5",
+        "created": "2026-10-06T22:29:35.824Z",
+        "duration": 14.55,
+        "channels": 1,
+        "models": [
+          "2187e11a-3532-4498-b076-81fa530bdd49"
+        ],
+        "model_info": {
+          "2187e11a-3532-4498-b076-81fa530bdd49": {
+            "name": "general-nova-3",
+            "version": "2025-07-31.0",
+            "arch": "nova-3"
+          }
+        }
+      }
+    },
+    {
+      "id": "1462-170138-0001",
+      "slice": "clean",
+      "reference": "HUGH'S WRITTEN A DELIGHTFUL PART FOR HER AND SHE'S QUITE INEXPRESSIBLE",
+      "prediction": "hugh's written a delightful part for her and she's quite inexpressible",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.32675595895852894,
+      "transcription_metadata": {
+        "transaction_key": "deprecated",
+        "request_id": "01a11356-284c-7293-bf79-3c756afab323",
+        "sha256": "0962f97611ce393f6b507e372e5768eda3545b2bd4517571085203ee13ab05e2",
+        "created": "2026-10-06T22:29:36.129Z",
+        "duration": 3.985,
+        "channels": 1,
+        "models": [
+          "2187e11a-3532-4498-b076-81fa530bdd49"
+        ],
+        "model_info": {
+          "2187e11a-3532-4498-b076-81fa530bdd49": {
+            "name": "general-nova-3",
+            "version": "2025-07-31.0",
+            "arch": "nova-3"
+          }
+        }
+      }
+    },
+    {
+      "id": "1673-143396-0000",
+      "slice": "clean",
+      "reference": "A LAUDABLE REGARD FOR THE HONOR OF THE FIRST PROSELYTE HAS COUNTENANCED THE BELIEF THE HOPE THE WISH THAT THE EBIONITES OR AT LEAST THE NAZARENES WERE DISTINGUISHED ONLY BY THEIR OBSTINATE PERSEVERANCE IN THE PRACTICE OF THE MOSAIC RITES",
+      "prediction": "a laudable regard for the honor of the first proselyte has countenanced the belief the hope the wish that the ebionites or at least the nazarenes were distinguished only by their obstinate perseverance in the practice of the mosaic rites",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.33902874996419996,
+      "transcription_metadata": {
+        "transaction_key": "deprecated",
+        "request_id": "01a11356-2994-75c3-a4bc-9375a70cbf11",
+        "sha256": "3e04afe2f2ce5cb949db8dfb3750eb758c2ea7ce30cd318df2e80c883d620b3c",
+        "created": "2026-10-06T22:29:36.474Z",
+        "duration": 14.675,
+        "channels": 1,
+        "models": [
+          "2187e11a-3532-4498-b076-81fa530bdd49"
+        ],
+        "model_info": {
+          "2187e11a-3532-4498-b076-81fa530bdd49": {
+            "name": "general-nova-3",
+            "version": "2025-07-31.0",
+            "arch": "nova-3"
+          }
+        }
+      }
+    },
+    {
+      "id": "1673-143396-0001",
+      "slice": "clean",
+      "reference": "THEIR CHURCHES HAVE DISAPPEARED THEIR BOOKS ARE OBLITERATED THEIR OBSCURE FREEDOM MIGHT ALLOW A LATITUDE OF FAITH AND THE SOFTNESS OF THEIR INFANT CREED WOULD BE VARIOUSLY MOULDED BY THE ZEAL OR PRUDENCE OF THREE HUNDRED YEARS",
+      "prediction": "their churches have disappeared their books are obliterated their obscure freedom might allow a latitude of faith and the softness of their infant creed would be variously molded by the zeal or prudence of three hundred years",
+      "scores": {
+        "wer": 0.02702702702702703,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.3756326660513878,
+      "transcription_metadata": {
+        "transaction_key": "deprecated",
+        "request_id": "01a11356-2b32-7fb2-99bf-fcfe92d9e72b",
+        "sha256": "091b5ee61b4d2b5e8eca03750395195525e751813d8582e9d74534c8dbbb5db9",
+        "created": "2026-10-06T22:29:36.865Z",
+        "duration": 14.05,
+        "channels": 1,
+        "models": [
+          "2187e11a-3532-4498-b076-81fa530bdd49"
+        ],
+        "model_info": {
+          "2187e11a-3532-4498-b076-81fa530bdd49": {
+            "name": "general-nova-3",
+            "version": "2025-07-31.0",
+            "arch": "nova-3"
+          }
+        }
+      }
+    },
+    {
+      "id": "174-168635-0000",
+      "slice": "clean",
+      "reference": "HE HAD NEVER BEEN FATHER LOVER HUSBAND FRIEND",
+      "prediction": "he had never been father lover husband friend",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.3080354999983683,
+      "transcription_metadata": {
+        "transaction_key": "deprecated",
+        "request_id": "01a11356-2c6c-7710-abac-aa854d15a74d",
+        "sha256": "dbb765967c6a51c8e794fb0098240b1e070c6b1bf0594b218570631604aab38f",
+        "created": "2026-10-06T22:29:37.173Z",
+        "duration": 4.53,
+        "channels": 1,
+        "models": [
+          "2187e11a-3532-4498-b076-81fa530bdd49"
+        ],
+        "model_info": {
+          "2187e11a-3532-4498-b076-81fa530bdd49": {
+            "name": "general-nova-3",
+            "version": "2025-07-31.0",
+            "arch": "nova-3"
+          }
+        }
+      }
+    },
+    {
+      "id": "174-168635-0001",
+      "slice": "clean",
+      "reference": "THE HEART OF THAT EX CONVICT WAS FULL OF VIRGINITY",
+      "prediction": "the heart of that ex convict was full of virginity",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.23689658392686397,
+      "transcription_metadata": {
+        "transaction_key": "deprecated",
+        "request_id": "01a11356-2d92-7e22-bddb-f5f949c03a65",
+        "sha256": "eb74f4c862ef5ce58006a967ec30d857264e746e447f75d6dd3a7fe56c698fcf",
+        "created": "2026-10-06T22:29:37.411Z",
+        "duration": 4.65,
+        "channels": 1,
+        "models": [
+          "2187e11a-3532-4498-b076-81fa530bdd49"
+        ],
+        "model_info": {
+          "2187e11a-3532-4498-b076-81fa530bdd49": {
+            "name": "general-nova-3",
+            "version": "2025-07-31.0",
+            "arch": "nova-3"
+          }
+        }
+      }
+    },
+    {
+      "id": "1919-142785-0000",
+      "slice": "clean",
+      "reference": "ILLUSTRATION LONG PEPPER",
+      "prediction": "illustration long pepper",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.2648611660115421,
+      "transcription_metadata": {
+        "transaction_key": "deprecated",
+        "request_id": "01a11356-2e83-73d3-bf26-09867270ddf6",
+        "sha256": "b205f6505788f8923f549ada5a946f6eaf00a885547ee7edc293cebad2711e37",
+        "created": "2026-10-06T22:29:37.677Z",
+        "duration": 2.66,
+        "channels": 1,
+        "models": [
+          "2187e11a-3532-4498-b076-81fa530bdd49"
+        ],
+        "model_info": {
+          "2187e11a-3532-4498-b076-81fa530bdd49": {
+            "name": "general-nova-3",
+            "version": "2025-07-31.0",
+            "arch": "nova-3"
+          }
+        }
+      }
+    },
+    {
+      "id": "1919-142785-0001",
+      "slice": "clean",
+      "reference": "LONG PEPPER THIS IS THE PRODUCE OF A DIFFERENT PLANT FROM THAT WHICH PRODUCES THE BLACK IT CONSISTING OF THE HALF RIPE FLOWER HEADS OF WHAT NATURALISTS CALL PIPER LONGUM AND CHABA",
+      "prediction": "long pepper this is the produce of a different plant from that which produces the black it consisting of the half ripe flower heads of what naturalists call piper longum and chaba",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.3703702080529183,
+      "transcription_metadata": {
+        "transaction_key": "deprecated",
+        "request_id": "01a11356-2f80-7a51-9553-329c031bce9b",
+        "sha256": "22913e56a206e2090468e54c641f34d7d404535c472b5a57184887762e482714",
+        "created": "2026-10-06T22:29:38.045Z",
+        "duration": 11.05,
+        "channels": 1,
+        "models": [
+          "2187e11a-3532-4498-b076-81fa530bdd49"
+        ],
+        "model_info": {
+          "2187e11a-3532-4498-b076-81fa530bdd49": {
+            "name": "general-nova-3",
+            "version": "2025-07-31.0",
+            "arch": "nova-3"
+          }
+        }
+      }
+    },
+    {
+      "id": "1988-147956-0000",
+      "slice": "clean",
+      "reference": "FUCHS BROUGHT UP A SACK OF POTATOES AND A PIECE OF CURED PORK FROM THE CELLAR AND GRANDMOTHER PACKED SOME LOAVES OF SATURDAY'S BREAD A JAR OF BUTTER AND SEVERAL PUMPKIN PIES IN THE STRAW OF THE WAGON BOX",
+      "prediction": "fooks brought up a sack of potatoes and a piece of cured pork from the cellar and grandmother packed some loaves of saturday's bread a jar of butter and several pumpkin pies in the straw of the wagon box",
+      "scores": {
+        "wer": 0.02564102564102564,
+        "insertions": 0,
+        "substitutions": 1,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.414395583095029,
+      "transcription_metadata": {
+        "transaction_key": "deprecated",
+        "request_id": "01a11356-316e-7a20-a6f2-da89f90d32b8",
+        "sha256": "dd619997014d3a6d45b909f1295c847e81942193ef85c7366c2dade42244f102",
+        "created": "2026-10-06T22:29:38.463Z",
+        "duration": 14.95,
+        "channels": 1,
+        "models": [
+          "2187e11a-3532-4498-b076-81fa530bdd49"
+        ],
+        "model_info": {
+          "2187e11a-3532-4498-b076-81fa530bdd49": {
+            "name": "general-nova-3",
+            "version": "2025-07-31.0",
+            "arch": "nova-3"
+          }
+        }
+      }
+    },
+    {
+      "id": "1988-147956-0001",
+      "slice": "clean",
+      "reference": "OCCASIONALLY ONE OF THE HORSES WOULD TEAR OFF WITH HIS TEETH A PLANT FULL OF BLOSSOMS AND WALK ALONG MUNCHING IT THE FLOWERS NODDING IN TIME TO HIS BITES AS HE ATE DOWN TOWARD THEM",
+      "prediction": "occasionally one of the horses would tear off with his teeth a plant full of blossoms and walk along munching it the flowers nodding in time to his bites as he ate down toward them",
+      "scores": {
+        "wer": 0.0,
+        "insertions": 0,
+        "substitutions": 0,
+        "deletions": 0
+      },
+      "transcription_seconds": 0.36734466708730906,
+      "transcription_metadata": {
+        "transaction_key": "deprecated",
+        "request_id": "01a11356-3284-79c3-95e7-555a701c839d",
+        "sha256": "84a4c71c2f297de0ec8f3d1519bfda4944a0b360b8a52329aff8709a6e5718eb",
+        "created": "2026-10-06T22:29:38.831Z",
+        "duration": 14.21,
+        "channels": 1,
+        "models": [
+          "2187e11a-3532-4498-b076-81fa530bdd49"
+        ],
+        "model_info": {
+          "2187e11a-3532-4498-b076-81fa530bdd49": {
+            "name": "general-nova-3",
+            "version": "2025-07-31.0",
+            "arch": "nova-3"
+          }
+        }
+      }
+    }
+  ],
+  "performance": {
+    "total_transcription_seconds": 4.3060681251809
+  },
+  "dataset_fingerprint": "8b5e649b4c1bd2003b282df9485e2962546c66358400169d8605b6437b961e11",
+  "normalization_version": "v1"
+}

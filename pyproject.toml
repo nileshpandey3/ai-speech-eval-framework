@@ -36,4 +36,5 @@ markers = [
     "transcript_word_scores",
     "benchmark: runs the broader speech evaluation",
     "deepgram_adapter: tests Deepgram integration without network calls",
+    "deepgram_live: evaluates the real Deepgram API",
 ]
