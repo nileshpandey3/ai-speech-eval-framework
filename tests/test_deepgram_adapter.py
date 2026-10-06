@@ -8,92 +8,104 @@ import requests
 from speech_eval.deepgram_adapter import transcribe_deepgram
 
 
-def test_extracts_transcript_and_metadata(tmp_path, monkeypatch):
-    audio = tmp_path / "sample.flac"
-    audio.write_bytes(b"test-audio")
+@pytest.mark.deepgram_adapter
+class TestDeepGramAdapter:
+    def test_missing_api_key_makes_no_request(self, monkeypatch):
+        post = Mock()
 
-    metadata = {"request_id": "test-request"}
+        monkeypatch.setattr(
+            "speech_eval.deepgram_adapter.requests.post",
+            post,
+        )
 
-    response = Mock()
-    response.json.return_value = {
-        "results": {
-            "channels": [
-                {
-                    "alternatives": [{"transcript": "hello world"}],
-                }
-            ],
-        },
-        "metadata": metadata,
-    }
+        with pytest.raises(ValueError, match="API key"):
+            transcribe_deepgram("unused.flac", "")
 
-    def fake_post(url, **kwargs):
-        assert url == "https://api.deepgram.com/v1/listen"
-        assert kwargs["data"].read() == b"test-audio"
-        assert kwargs["headers"]["Authorization"] == "Token fake-key"
-        assert kwargs["params"]["model"] == "nova-3"
-        assert kwargs["timeout"] == (10, 60)
-        return response
+        post.assert_not_called()
 
-    monkeypatch.setattr(
-        "speech_eval.deepgram_adapter.requests.post",
-        fake_post,
-    )
+    def test_extracts_transcript_and_metadata(self, tmp_path, monkeypatch):
+        audio = tmp_path / "sample.flac"
+        audio.write_bytes(b"test-audio")
 
-    result = transcribe_deepgram(str(audio), "fake-key")
+        metadata = {"request_id": "test-request"}
 
-    assert result == {
-        "text": "hello world",
-        "metadata": metadata,
-    }
-    response.raise_for_status.assert_called_once()
+        response = Mock()
+        response.json.return_value = {
+            "results": {
+                "channels": [
+                    {
+                        "alternatives": [{"transcript": "hello world"}],
+                    }
+                ],
+            },
+            "metadata": metadata,
+        }
 
+        def fake_post(url, **kwargs):
+            assert url == "https://api.deepgram.com/v1/listen"
+            assert kwargs["data"].read() == b"test-audio"
+            assert kwargs["headers"]["Authorization"] == "Token fake-key"
+            assert kwargs["params"]["model"] == "nova-3"
+            assert kwargs["timeout"] == (10, 60)
+            return response
 
-@pytest.mark.parametrize("status", [401, 429, 503])
-def test_http_failure_is_not_scored(tmp_path, monkeypatch, status):
-    audio = tmp_path / "sample.flac"
-    audio.write_bytes(b"test-audio")
+        monkeypatch.setattr(
+            "speech_eval.deepgram_adapter.requests.post",
+            fake_post,
+        )
 
-    response = Mock()
-    response.raise_for_status.side_effect = requests.HTTPError(f"HTTP {status}")
+        result = transcribe_deepgram(str(audio), "fake-key")
 
-    monkeypatch.setattr(
-        "speech_eval.deepgram_adapter.requests.post",
-        Mock(return_value=response),
-    )
+        assert result == {
+            "text": "hello world",
+            "metadata": metadata,
+        }
+        response.raise_for_status.assert_called_once()
 
-    with pytest.raises(requests.HTTPError):
-        transcribe_deepgram(str(audio), "fake-key")
+    @pytest.mark.parametrize("status", [401, 429, 503])
+    def test_http_failure_is_not_scored(self, tmp_path, monkeypatch, status):
+        audio = tmp_path / "sample.flac"
+        audio.write_bytes(b"test-audio")
 
-    response.json.assert_not_called()
+        response = Mock()
+        response.raise_for_status.side_effect = requests.HTTPError(f"HTTP {status}")
 
+        monkeypatch.setattr(
+            "speech_eval.deepgram_adapter.requests.post",
+            Mock(return_value=response),
+        )
 
-def test_missing_transcript_is_rejected(tmp_path, monkeypatch):
-    audio = tmp_path / "sample.flac"
-    audio.write_bytes(b"test-audio")
+        with pytest.raises(requests.HTTPError):
+            transcribe_deepgram(str(audio), "fake-key")
 
-    response = Mock()
-    response.json.return_value = {
-        "results": {"channels": []},
-        "metadata": {},
-    }
+        response.json.assert_not_called()
 
-    monkeypatch.setattr(
-        "speech_eval.deepgram_adapter.requests.post",
-        Mock(return_value=response),
-    )
+    def test_missing_transcript_is_rejected(self, tmp_path, monkeypatch):
+        audio = tmp_path / "sample.flac"
+        audio.write_bytes(b"test-audio")
 
-    with pytest.raises(ValueError, match="Malformed Deepgram response"):
-        transcribe_deepgram(str(audio), "fake-key")
+        response = Mock()
+        response.json.return_value = {
+            "results": {"channels": []},
+            "metadata": {},
+        }
 
+        monkeypatch.setattr(
+            "speech_eval.deepgram_adapter.requests.post",
+            Mock(return_value=response),
+        )
 
-def test_timeout_propagates(tmp_path, monkeypatch):
-    audio = tmp_path / "sample.flac"
-    audio.write_bytes(b"test-audio")
+        with pytest.raises(ValueError, match="Malformed Deepgram response"):
+            transcribe_deepgram(str(audio), "fake-key")
 
-    monkeypatch.setattr(
-        "speech_eval.deepgram_adapter.requests.post",
-        Mock(side_effect=requests.Timeout("Request timed out")),
-    )
+    def test_timeout_propagates(self, tmp_path, monkeypatch):
+        audio = tmp_path / "sample.flac"
+        audio.write_bytes(b"test-audio")
 
-    with pytest.raises(requests.Timeout):
-        transcribe_deepgram(str(audio), "fake-key")
+        monkeypatch.setattr(
+            "speech_eval.deepgram_adapter.requests.post",
+            Mock(side_effect=requests.Timeout("Request timed out")),
+        )
+
+        with pytest.raises(requests.Timeout):
+            transcribe_deepgram(str(audio), "fake-key")

@@ -1,10 +1,9 @@
 """Transcribe FLAC audio using Deepgram's pre-recorded API."""
 
+import os
 from pathlib import Path
 
 import requests
-
-from setup import DEEPGRAM_API_KEY
 
 
 def transcribe_deepgram(audio_path: str, api_key: str) -> dict:
@@ -16,7 +15,7 @@ def transcribe_deepgram(audio_path: str, api_key: str) -> dict:
         response = requests.post(
             "https://api.deepgram.com/v1/listen",
             headers={
-                "Authorization": f"Token {DEEPGRAM_API_KEY}",
+                "Authorization": f"Token {api_key}",
                 "Content-Type": "audio/flac",
             },
             params={
