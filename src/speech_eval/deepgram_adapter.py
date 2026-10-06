@@ -1,6 +1,5 @@
 """Transcribe FLAC audio using Deepgram's pre-recorded API."""
 
-import os
 from pathlib import Path
 
 import requests
