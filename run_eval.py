@@ -6,7 +6,7 @@ from time import perf_counter
 from faster_whisper import WhisperModel
 
 from speech_eval.providers import PROVIDERS, create_transcriber
-from speech_eval.dataset import fingerprint_dataset
+from speech_eval.dataset import fingerprint_dataset, validate_samples
 from speech_eval.normalize import NORMALIZATION_VERSION
 from speech_eval.score import score_corpus, score_transcript
 from speech_eval.transcribe import transcribe_audio
@@ -42,6 +42,10 @@ def main(
 
     if not samples:
         raise ValueError("The dataset manifest is empty")
+
+    validate_samples(samples)
+
+    validate_audio_files(samples)
 
     # Capture the dataset identity before transcription.
     dataset_fingerprint = fingerprint_dataset(samples)

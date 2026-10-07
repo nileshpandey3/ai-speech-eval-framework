@@ -12,6 +12,7 @@ dependencies = [
     "faster-whisper>=1,<2",
     "av==18.0.0", # Avoid the PyAV 19 metadata_errors API change
     "pytest-html>=4,<5",
+    "soundfile>=0.13,<0.14",
 
 ]
 
