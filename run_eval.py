@@ -6,7 +6,11 @@ from time import perf_counter
 from faster_whisper import WhisperModel
 
 from speech_eval.providers import PROVIDERS, create_transcriber
-from speech_eval.dataset import fingerprint_dataset, validate_samples
+from speech_eval.dataset import (
+    fingerprint_dataset,
+    validate_samples,
+    validate_audio_files,
+)
 from speech_eval.normalize import NORMALIZATION_VERSION
 from speech_eval.score import score_corpus, score_transcript
 from speech_eval.transcribe import transcribe_audio
