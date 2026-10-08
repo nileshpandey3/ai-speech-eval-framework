@@ -22,7 +22,7 @@ def test_customer_acceptance(extras):
     )
 
     expected_checks = {
-        "customer-order-001": "accepted_phrase_preserved",
+        "customer-order-001": "required_phrase_preserved",
         "customer-negation-001": "required_phrase_preserved",
         "customer-silence-001": "no_transcribed_words",
     }
