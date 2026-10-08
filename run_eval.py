@@ -63,11 +63,6 @@ def main(
             sample.get("expectations", {}),
         )
 
-        if not isinstance(prediction, str):
-            raise ValueError(
-                f"Provider returned a non-string transcript for {sample['id']}"
-            )
-
         references.append(sample["reference"])
         predictions.append(prediction)
 

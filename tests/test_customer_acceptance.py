@@ -1,15 +1,24 @@
-import pytest
+import json
 
+import pytest
+import pytest_html.extras as report_extras
 from run_eval import main
 
 
 @pytest.mark.live
 @pytest.mark.customer
-def test_customer_acceptance():
+def test_customer_acceptance(extras):
     """Require every expected customer check to run and pass."""
     result = main(
         manifest_path="data/customer.jsonl",
         results_path="outputs/customer-results.json",
+    )
+    # attach the evaluation evidence to the customer HTML report
+    extras.append(
+        report_extras.text(
+            json.dumps(result, indent=2),
+            name="Customer evaluation evidence",
+        )
     )
 
     expected_checks = {
