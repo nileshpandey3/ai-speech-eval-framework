@@ -67,6 +67,14 @@ jobs:
             --html=outputs/live-report.html \
             --self-contained-html
 
+      # This runs the customer checks even if the preceding accuracy gate fails,
+      # provided the workflow hasn’t been canceled
+      - name: Run customer acceptance gate
+        if: ${{ !cancelled() }}
+        run: |
+          python -m pytest -m "customer and not deepgram_live" -q \
+            --html=outputs/customer-report.html
+
       - name: Upload evaluation evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -75,4 +83,7 @@ jobs:
           path: |
             outputs/results.json
             outputs/live-report.html
+            outputs/customer-results.json
+            outputs/customer-report.html
+            outputs/assets/
           retention-days: 14
