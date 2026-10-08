@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+from unittest.mock import Mock
 
 import pytest
 import pytest_html.extras as report_extras
@@ -12,11 +13,7 @@ from speech_eval.compare import compare_evaluations
 def test_live_evaluation_against_baseline(extras):
     candidate = main()
 
-    baseline_path = (
-            Path(__file__).resolve().parents[1]
-            / "baselines"
-            / "tiny-en.json"
-    )
+    baseline_path = Path(__file__).resolve().parents[1] / "baselines" / "tiny-en.json"
 
     with baseline_path.open(encoding="utf-8") as file:
         baseline = json.load(file)
@@ -43,3 +40,36 @@ def test_live_evaluation_against_baseline(extras):
     # GO means “no aggregate WER regression detected on this smoke dataset.”
     # It doesn’t establish production readiness, and an aggregate score can hide one clip getting worse while another improves.
     assert decision["decision"] == "GO", decision["reasons"]
+
+
+def test_invalid_expectations_block_model_initialization(tmp_path, monkeypatch):
+    """Reject malformed evaluation rules before initializing a provider."""
+    audio_path = tmp_path / "clip.flac"
+    audio_path.write_bytes(b"placeholder")
+
+    sample = {
+        "id": "invalid-expectation",
+        "audio": str(audio_path),
+        "reference": "Your order is AB4821",
+        "slice": "customer",
+        "expectations": {
+            "required_phrase": ["AB4821"],  # Should be a string
+        },
+    }
+
+    manifest = tmp_path / "manifest.jsonl"
+    manifest.write_text(json.dumps(sample) + "\n", encoding="utf-8")
+
+    create_provider = Mock()
+    monkeypatch.setattr("run_eval.create_transcriber", create_provider)
+
+    with pytest.raises(
+        ValueError,
+        match="required_phrase must be a nonempty string",
+    ):
+        main(
+            manifest_path=manifest,
+            results_path=tmp_path / "results.json",
+        )
+
+    create_provider.assert_not_called()

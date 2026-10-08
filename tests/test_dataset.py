@@ -6,6 +6,7 @@ from speech_eval.dataset import (
     fingerprint_dataset,
     validate_samples,
     validate_audio_files,
+    validate_expectations,
 )
 
 
@@ -106,3 +107,32 @@ def test_corrupt_audio_is_rejected(tmp_path):
         match="clip-001: audio could not be decoded",
     ):
         validate_audio_files([make_sample(audio_path)])
+
+
+@pytest.mark.parametrize(
+    "expectations",
+    [
+        {"required_phrase": ["AB4821"]},
+        {"required_phrase": "   "},
+        {"accepted_phrases": "AB4821"},
+        {"accepted_phrases": []},
+        {"no_transcribed_words": "true"},
+        {"required_pharse": "AB4821"},
+    ],
+)
+def test_invalid_expectations_are_rejected(expectations):
+    with pytest.raises(ValueError):
+        validate_expectations(expectations)
+
+
+@pytest.mark.parametrize(
+    "expectations",
+    [
+        {},
+        {"required_phrase": "AB4821"},
+        {"accepted_phrases": ["AB4821", "AB 4821"]},
+        {"no_transcribed_words": True},
+    ],
+)
+def test_valid_expectations_pass(expectations):
+    validate_expectations(expectations)

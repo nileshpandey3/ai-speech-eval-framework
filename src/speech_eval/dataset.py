@@ -44,6 +44,13 @@ def validate_samples(samples: list[dict]) -> None:
         if missing_fields:
             raise ValueError(f"Sample {index}: missing fields {sorted(missing_fields)}")
 
+        expectations = sample.get("expectations", {})
+
+        try:
+            validate_expectations(expectations)
+        except ValueError as error:
+            raise ValueError(f"Sample {index}: {error}") from error
+
         is_silence = (
             sample["slice"] == "silence"
             and sample.get("expectations", {}).get("no_transcribed_words") is True
@@ -88,3 +95,39 @@ def validate_audio_files(samples: list[dict]) -> None:
 
         if len(audio) == 0:
             raise ValueError(f"{clip_id}: audio contains no samples")
+
+
+def validate_expectations(expectations: dict) -> None:
+    """Reject unsupported or malformed customer acceptance rules."""
+    if not isinstance(expectations, dict):
+        raise ValueError("expectations must be a dictionary")
+
+    supported = {
+        "required_phrase",
+        "accepted_phrases",
+        "no_transcribed_words",
+    }
+
+    unknown = expectations.keys() - supported
+    if unknown:
+        raise ValueError(f"Unknown expectations: {sorted(unknown)}")
+
+    if "required_phrase" in expectations:
+        phrase = expectations["required_phrase"]
+
+        if not isinstance(phrase, str) or not phrase.strip():
+            raise ValueError("required_phrase must be a nonempty string")
+
+    if "accepted_phrases" in expectations:
+        phrases = expectations["accepted_phrases"]
+
+        if not isinstance(phrases, list) or not phrases:
+            raise ValueError("accepted_phrases must be a nonempty list")
+
+        for phrase in phrases:
+            if not isinstance(phrase, str) or not phrase.strip():
+                raise ValueError("Each accepted phrase must be a nonempty string")
+
+    if "no_transcribed_words" in expectations:
+        if expectations["no_transcribed_words"] is not True:
+            raise ValueError("no_transcribed_words must be true")
