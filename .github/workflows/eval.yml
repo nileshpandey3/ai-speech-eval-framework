@@ -63,7 +63,7 @@ jobs:
 
       - name: Run live accuracy gate
         run: |
-          python -m pytest -m "live and not benchmark and not deepgram_live" -q \
+          python -m pytest -m "live and not benchmark and not deepgram_live and not customer" -q \
             --html=outputs/live-report.html \
             --self-contained-html
 

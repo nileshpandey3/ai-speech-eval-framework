@@ -1,0 +1,3 @@
+{"id":"customer-order-001","audio":"data/customer-clips/order-id.flac","reference":"Your order is A B four eight two one.","slice":"customer","expectations":{"accepted_phrases": ["AB4821", "A B four eight two one"]}}
+{"id":"customer-negation-001","audio":"data/customer-clips/negation.flac","reference":"Please do not cancel my booking.","slice":"customer","expectations":{"required_phrase":"do not cancel"}}
+{"id":"customer-silence-001","audio":"data/customer-clips/silence.flac","reference":"","slice":"silence","expectations":{"no_transcribed_words":true}}

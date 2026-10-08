@@ -5,6 +5,7 @@ from time import perf_counter
 
 from faster_whisper import WhisperModel
 
+from speech_eval.critical import evaluate_customer_checks
 from speech_eval.providers import PROVIDERS, create_transcriber
 from speech_eval.dataset import (
     fingerprint_dataset,
@@ -68,6 +69,11 @@ def main(
 
         prediction = response["text"]
 
+        customer_checks = evaluate_customer_checks(
+            prediction,
+            sample.get("expectations", {}),
+        )
+
         if not isinstance(prediction, str):
             raise ValueError(
                 f"Provider returned a non-string transcript for {sample['id']}"
@@ -85,8 +91,25 @@ def main(
                 "scores": score_transcript(sample["reference"], prediction),
                 "transcription_seconds": transcription_seconds,
                 "transcription_metadata": response["metadata"],
+                "expectations": sample.get("expectations", {}),
+                "customer_checks": customer_checks,
             }
         )
+
+    customer_failures = []
+
+    for clip in clip_results:
+        for check_name, passed in clip["customer_checks"].items():
+            if not passed:
+                customer_failures.append(
+                    {
+                        "clip_id": clip["id"],
+                        "check": check_name,
+                        "expectations": clip["expectations"],
+                        "prediction": clip["prediction"],
+                    }
+                )
+    check_count = sum(len(clip["customer_checks"]) for clip in clip_results)
 
     evaluation = {
         "provider": provider,
@@ -102,6 +125,11 @@ def main(
         },
         "dataset_fingerprint": dataset_fingerprint,
         "normalization_version": NORMALIZATION_VERSION,
+        "customer_acceptance": {
+            "check_count": check_count,
+            "failure_count": len(customer_failures),
+            "failures": customer_failures,
+        },
     }
 
     output_path = Path(results_path)

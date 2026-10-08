@@ -41,11 +41,23 @@ def validate_samples(samples: list[dict]) -> None:
         required_fields = {"id", "audio", "reference", "slice"}
         missing_fields = required_fields - sample.keys()
 
+        is_silence = (
+            sample["slice"] == "silence"
+            and sample.get("expectations", {}).get("no_transcribed_words") is True
+        )
+
         if missing_fields:
             raise ValueError(f"Sample {index}: missing fields {sorted(missing_fields)}")
 
         for field in required_fields:
             value = sample[field]
+
+            if not isinstance(value, str):
+                raise ValueError(f"Sample {index}: {field} must be a string")
+
+            # Silence recordings are allowed to have an empty reference.
+            if field == "reference" and is_silence:
+                continue
 
             if not isinstance(value, str) or not value.strip():
                 raise ValueError(f"Sample {index}: {field} must be a nonempty string")

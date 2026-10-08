@@ -38,4 +38,5 @@ markers = [
     "benchmark: runs the broader speech evaluation",
     "deepgram_adapter: tests Deepgram integration without network calls",
     "deepgram_live: evaluates the real Deepgram API",
+    "customer: evaluates customer-focused transcription expectations",
 ]
