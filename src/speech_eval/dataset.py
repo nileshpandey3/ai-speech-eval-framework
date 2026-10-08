@@ -41,13 +41,13 @@ def validate_samples(samples: list[dict]) -> None:
         required_fields = {"id", "audio", "reference", "slice"}
         missing_fields = required_fields - sample.keys()
 
+        if missing_fields:
+            raise ValueError(f"Sample {index}: missing fields {sorted(missing_fields)}")
+
         is_silence = (
             sample["slice"] == "silence"
             and sample.get("expectations", {}).get("no_transcribed_words") is True
         )
-
-        if missing_fields:
-            raise ValueError(f"Sample {index}: missing fields {sorted(missing_fields)}")
 
         for field in required_fields:
             value = sample[field]

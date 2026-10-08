@@ -1,24 +1,3 @@
-import json
-import argparse
-from pathlib import Path
-from time import perf_counter
-
-from faster_whisper import WhisperModel
-
-from speech_eval.critical import evaluate_customer_checks
-from speech_eval.providers import PROVIDERS, create_transcriber
-from speech_eval.dataset import (
-    fingerprint_dataset,
-    validate_samples,
-    validate_audio_files,
-)
-from speech_eval.normalize import NORMALIZATION_VERSION
-from speech_eval.score import score_corpus, score_transcript
-from speech_eval.transcribe import transcribe_audio
-from speech_eval.config import MODEL_SETTINGS, DECODING_SETTINGS
-from faster_whisper.utils import download_model
-
-
 """Evaluate speech transcription providers against a dataset manifest."""
 
 import argparse
@@ -26,7 +5,12 @@ import json
 from pathlib import Path
 from time import perf_counter
 
-from speech_eval.dataset import fingerprint_dataset
+from speech_eval.critical import evaluate_customer_checks
+from speech_eval.dataset import (
+    fingerprint_dataset,
+    validate_audio_files,
+    validate_samples,
+)
 from speech_eval.normalize import NORMALIZATION_VERSION
 from speech_eval.providers import PROVIDERS, create_transcriber
 from speech_eval.score import score_corpus, score_transcript
@@ -68,6 +52,11 @@ def main(
         transcription_seconds = perf_counter() - start
 
         prediction = response["text"]
+
+        if not isinstance(prediction, str):
+            raise ValueError(
+                f"Provider returned a non-string transcript for {sample['id']}"
+            )
 
         customer_checks = evaluate_customer_checks(
             prediction,

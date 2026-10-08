@@ -1,6 +1,10 @@
 import pytest
 
-from speech_eval.critical import contains_critical_phrase, has_no_transcribed_words
+from speech_eval.critical import (
+    contains_critical_phrase,
+    has_no_transcribed_words,
+    evaluate_customer_checks,
+)
 
 
 @pytest.mark.parametrize(
@@ -71,3 +75,28 @@ def test_silence_produces_no_transcribed_words(prediction, expected_result):
     result = has_no_transcribed_words(prediction)
 
     assert result is expected_result
+
+
+@pytest.mark.parametrize(
+    "prediction, expected_result",
+    [
+        ("Your order is AB4821.", True),
+        ("Your order is A B four eight two one.", True),
+        ("Your order is AB4829.", False),
+        ("Your order is AB48219.", False),
+        ("Your order is CD4821.", False),
+        ("Your order is ready.", False),
+    ],
+)
+def test_accepted_order_formats(prediction, expected_result):
+    """Accept approved identifier formats and reject incorrect identifiers."""
+    expectations = {
+        "accepted_phrases": [
+            "AB4821",
+            "A B four eight two one",
+        ]
+    }
+
+    checks = evaluate_customer_checks(prediction, expectations)
+
+    assert checks["accepted_phrase_preserved"] is expected_result
