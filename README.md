@@ -22,6 +22,23 @@ Currently supports local Whisper and the Deepgram STT API.
 - **Performance:** Transcription time is recorded for inspection, but does not currently block the gate and can be used in future to track API/model latency.
 - **Evidence:** JSON results and HTML reports expose transcripts, metrics, settings, and comparison decisions.
 
+### Customer Acceptance Criteria
+
+The customer evaluation checks three recorded fixtures:
+
+- **Order identifier:** The transcript must contain order no: `AB4821` as one
+  complete token, with no internal spaces. Matching is case-insensitive.
+  `AB 4821` and `A B four eight two one` fail this requirement.
+- **Negation:** The transcript must preserve the exact phrase
+  `do not cancel` under the existing normalization policy.
+- **Silence:** The labeled silence recording must produce no
+  transcribed words under the existing normalization policy.
+
+Every expected check must execute and pass. A missing or failed check
+fails the customer acceptance gate, independently of aggregate WER.
+
+These criteria apply to the three demo fixtures; they do not establish
+general identifier accuracy, intent understanding, or silence handling.
 Passing suite means the selected tests passed and the evaluated model met the accuracy policy on the selected dataset. It does not establish overall production readiness.
 
 ## Scope and Limitations

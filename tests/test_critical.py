@@ -100,3 +100,19 @@ def test_accepted_order_formats(prediction, expected_result):
     checks = evaluate_customer_checks(prediction, expectations)
 
     assert checks["accepted_phrase_preserved"] is expected_result
+
+
+@pytest.mark.parametrize(
+    "prediction, expected_result",
+    [
+        ("Your order is AB4821.", True),
+        ("Your order is AB 4821.", False),
+        ("Your order is A B four eight two one.", False),
+        ("Your order is AB4829.", False),
+        ("Your order is AB48219.", False),
+    ],
+)
+def test_order_identifier_requires_no_spaces(prediction, expected_result):
+    result = contains_critical_phrase(prediction, "AB4821")
+
+    assert result is expected_result
