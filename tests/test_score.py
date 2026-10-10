@@ -1,6 +1,4 @@
 import pytest
-
-from src.speech_eval.normalize import normalize_text
 from src.speech_eval.score import score_transcript, score_corpus
 
 
@@ -20,15 +18,15 @@ class TestScores:
         assert result["insertions"] == 0
 
     def test_normalization_before_scoring(self):
-            result = score_transcript(
-                reference=normalize_text("  THE   CAT\nSAT DOWN  "),
-                prediction=normalize_text("the cat sat down"),
-            )
+        result = score_transcript(
+            reference="  THE   CAT\nSAT DOWN  ",
+            prediction="the cat sat down",
+        )
 
-            assert result["wer"] == 0
-            assert result["substitutions"] == 0
-            assert result["deletions"] == 0
-            assert result["insertions"] == 0
+        assert result["wer"] == 0
+        assert result["substitutions"] == 0
+        assert result["deletions"] == 0
+        assert result["insertions"] == 0
 
     def test_one_deletion(self):
         """One missing word out of four reference words gives WER 0.25."""
